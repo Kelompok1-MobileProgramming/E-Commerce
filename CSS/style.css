@@ -1,0 +1,177 @@
+    .tabel {width: auto; height: auto; margin: 0 auto; border-style: solid;}
+   
+    .button {width: 250px; height: auto; font-size: 40px; border-style: double;}
+    .headback {background-image: linear-gradient(rgb(235, 218, 145), rgb(255, 255, 181)); width: 100%; height: auto; margin: 0 auto; padding: 0px;}
+    .backgron {background-color: white; width: 100%; height: auto; margin-top: 0%; padding-top: 0px;}
+    .container {background-image: url("woodtexture1.jpg"); width: 100%; height: auto; margin: 0 auto; padding: 0px; padding-top: 0%;}
+    
+    .gambar {margin-left: 15px;}
+    .gambar1 {margin-left: 0px;}
+    .gambar:hover {background-color: #ebf0f5; -webkit-transition: 1s;}
+    .gambar1:hover {background-color: #ebf0f5; -webkit-transition: 1s;}
+
+    .baju {background-color: #5fb0f1; -webkit-transition: 1s;}
+    .baju:hover {background-color: #74cff3;}
+
+    .text {margin: 0%;font-size: 20px; opacity: 100%; text-decoration: none;}
+
+    
+
+    .dropbtn {
+        background-color: coral;
+        -webkit-transition: 1s;
+        width: 200px;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #eaf1a7;
+        min-width: 180px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        font-size: 30px;
+        
+      }
+      
+     
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .home {text-align: center; font-size: 16px; background-color: rgb(30, 120, 255); height: 35px;}
+
+      .home:hover {background-color: #0c4af5e0; -webkit-transition: 0.2s;}
+
+      .dropdown-content a:hover {text-decoration: none; }
+      
+      .dropdown:hover .dropdown-content {display: block;}
+      
+      .dropdown:hover .dropbtn {background-color: #dba718;}
+
+      form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+      }
+      
+      /* Style the submit button */
+      form.example button {
+        float: left;
+        width: auto;
+        height: 42px;
+        padding: 10px;
+        background: #1b486d;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none; /* Prevent double borders */
+        cursor: pointer;
+      }
+      
+      form.example button:hover {
+        background: #092338;
+      }
+      
+      /* Clear floats */
+      form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+.recom {width: 100%; height: auto; background-color: coral; margin: 0px; padding: 20px; padding-left: 300px;}
+
+.recomtext {margin: 0 auto; float: right; margin-top: 18%;}
+
+.boxes{
+  margin-top: 20px;
+}
+
+.boxes .box {
+float: left;
+text-align: left;
+width: 30%;
+padding: 5px;
+}
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: rgb(243, 147, 23);
+  background-image: linear-gradient(rgb(235, 218, 145), rgb(255, 255, 181));
+  text-align: start;
+  height: 300px;
+}
+
+footer h6{
+  padding: 0px;
+  margin: 0px;
+  color: black;
+  display: inline;
+}
+
+footer ul{
+  margin: 0px;
+  padding: 0px;
+}
+
+footer li{
+  list-style-type: none;
+  color: rgb(155, 75, 10);
+}
+
+footer li:hover{
+  color:  rgb(109, 53, 8);
+}
+
+#searchbar{ 
+  background-color:  rgb(255, 255, 181);
+  padding:15px; 
+  border-radius: 5px; 
+  float: right;
+  border-style: hidden;
+} 
+
+input[type=text] { 
+   width: 30%; 
+   -webkit-transition: width 0.15s ease-in-out; 
+   transition: width 0.15s ease-in-out; 
+} 
+
+/* When the input field gets focus, 
+     change its width to 100% */
+input[type=text]:focus { 
+  width: 70%; 
+} 
+
+#list{ 
+ font-size:  1.5em; 
+ margin-left: 90px; 
+} 
+
+.items{ 
+display: list-item;     
+}  
+
+#li{
+  list-style-type: none;
+}
