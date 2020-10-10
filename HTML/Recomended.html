@@ -1,0 +1,294 @@
+<html>
+
+<head>
+    <title>RECOMMENDED</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body class="backgron">
+    <div class="">
+        <div class="headback">
+            <p style="float: right; margin: 0%;">Selamat Datang, Guest!</p>
+            <a href="index.html"><button type="submit" style="float: right; margin: 0%;">Sign in</button></a>
+            <br><br>
+            <h1 style="font-size: 80px; text-align: center;"><img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/bolo1.png?raw=true"></h1>
+            <p style="text-align: center;"><img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/bolobolobelanja.png?raw=true" width="700px"></p>
+            <br>
+
+            <div class="dropdown">
+                <button class="dropbtn">MENU</button>
+                <div class="dropdown-content">
+                    <a href="Main.html" class="home" style="padding-top: 3%; color: white;">Home</a>
+                    <a href="index.html" class="home" style="padding-top: 3%; color: white;">Performance</a>
+                    <div class="dropdown dropright">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="width: 200px;">
+                              Products
+                            </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Recommended</a>
+                            <a class="dropdown-item" href="#">Popular</a>
+                            <a class="dropdown-item" href="#">View All Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input id="searchbar" onkeyup="search_item()" type="text" name="search" placeholder="Search items..">
+        </div>
+
+
+        <div class="container">
+            <ol id="list" class="list-unstyled" style="margin : 0%;">
+                
+                <h2 class="mt-3, items, list-unstyled">RECOMMENDED</h2>
+                <hr>
+                
+
+                <li class="items , list-unstyled">
+                    <div class="gambar1">
+                        <div class="col-sm mx-0 px-5 py-3 border rounded">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <h5 class="my-2 text-primary">Masker</h5>
+                                    <h4 class="text-success">IDR 3,999</h4>
+                                </div>
+                                <div class="col-sm text-right">
+                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/masker.jpg?raw=true" method="GET" width="84" height="84">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="items , list-unstyled">
+                    <div class="gambar1">
+                        <div class="col-sm mx-0.9 px-5 py-3 border rounded">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <h5 class="my-2 text-primary">Jeans sobek</h5>
+                                    <h4 class="text-success">IDR 8,000</h4>
+                                </div>
+                                <div class="col-sm text-right">
+                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/jeans.jpg?raw=true" method="GET" width="84" height="84">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="items , list-unstyled">
+                    <div class="gambar1">
+                        <div class="col-sm mx-0.9 px-5 py-3 border rounded">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <h5 class="my-2 text-primary">Like IG</h5>
+                                    <h4 class="text-success">IDR 3,000</h4>
+                                </div>
+                                <div class="col-sm text-right">
+                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/jual.jpg?raw=true" method="GET" width="84" height="84">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="items , list-unstyled">
+                    <div class="gambar1">
+                        <div class="col-sm mx-0.9 px-5 py-3 border rounded">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <h5 class="my-2 text-primary">Kotak Bekal</h5>
+                                    <h4 class="text-success">IDR 10,000</h4>
+                                </div>
+                                <div class="col-sm text-right">
+                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/kotak.jpg?raw=true" method="GET" width="84" height="84">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="items , list-unstyled">
+                    <div class="gambar1">
+                        <div class="col-sm mx-0.9 px-5 py-3 border rounded">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <h5 class="my-2 text-primary">Salju Man</h5>
+                                    <h4 class="text-success">IDR 8,000</h4>
+                                </div>
+                                <div class="col-sm text-right">
+                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/spidol.jpg?raw=true" method="GET" width="84" height="84">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="items , list-unstyled">
+                    <a href="#" class="list-unstyled">
+                        <div class="gambar1">
+                            <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h5 class="my-2 text-primary">Beras</h5>
+                                        <h4 class="text-success" style="font-size: 18px;">IDR 19,999</h4>
+                                    </div>
+                                    <div class="col-sm text-right">
+                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/beras.jpg?raw=true" width="84" height="84">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+                <li class="items , list-unstyled">
+                    <a href="#" class="list-unstyled">
+                        <div class="gambar1">
+                            <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h5 class="my-2 text-primary">Waterpods</h5>
+                                        <h4 class="text-success" style="font-size: 18px;">IDR 999,999</h4>
+                                    </div>
+                                    <div class="col-sm text-right">
+                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/airpods.jpg?raw=true" method="GET" width="84" height="84">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="items , list-unstyled">
+                    <a href="#" class="list-unstyled">
+                        <div class="gambar1">
+                            <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h5 class="my-2 text-primary">Potabi</h5>
+                                        <h4 class="text-success" style="font-size: 18px;">IDR 8,500</h4>
+                                    </div>
+                                    <div class="col-sm text-right">
+                                        <img src="https://assets.klikindomaret.com/share/20080040/20080040_1.jpg" width="84" height="84">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="items , list-unstyled">
+                    <a href="#" class="list-unstyled">
+                        <div class="gambar1">
+                            <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h5 class="my-2 text-primary">Japoouta</h5>
+                                        <h4 class="text-success" style="font-size: 18px;">IDR 10,000</h4>
+                                    </div>
+                                    <div class="col-sm text-right">
+                                        <img src="https://github.com/Andri-F/perkembangan/blob/master/japoota.jpg?raw=true" width="84" height="84">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+        </div>
+
+        <hr>
+
+
+        </ol>
+
+        <script src="../Javascript/search.js"></script>
+
+        <footer>
+            <section class="boxes">
+                <div class="container">
+
+                    <div class="box">
+                        <h6><b>BoloBolo</b></H6>
+                        <ul>
+                            <a href="#" style="text-decoration: none;">
+                                <li> About BoloBolo</li>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <li> Dictionary BoloBolo </li>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <li> Official Store </li>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <li> Application BoloBolo </li>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <li> Deals BoloBolo </li>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <li> Discount BoloBolo </li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="box">
+                        <h6><b>Buy</b></h6>
+                        <ul>
+                            <a href="#" style="text-decoration: none;">
+                                <li> Category</li>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <li> Recomended</li>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <li> Popular</li>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <li> All Products</li>
+                            </a>
+                        </ul>
+                    </div>
+
+
+                    <div class="box">
+                        <h6><b>Sell</b></h6>
+                        <ul>
+                            <a href="#" style="text-decoration: none;"></a>
+                            <li> Education Seller</li>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <li> BoloBolo Partners</li>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <li> Official Store Lists</li>
+                            </a>
+                            <br></br>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <aside>
+                <h6><b>Helps and Guides</b></h6>
+                <v1>
+                    <a href="#" style="text-decoration: none;">
+                        <li>BoloBolo Care</li>
+                    </a>
+                    <a href="#" style="text-decoration: none;">
+                        <li>Terms and Condition</li>
+                    </a>
+                    <a href="#" style="text-decoration: none;">
+                        <li>Privacy Policy</li>
+                    </a>
+                </v1>
+            </aside>
+        </footer>
+</body>
+
+</html>
