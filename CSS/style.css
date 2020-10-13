@@ -1,7 +1,7 @@
 @viewport {
   width: device-width ;
 }
-@media screen and (min-width: 321px) and (max-width: 480px) {
+@media screen and (min-width: 330px) and (max-width: 480px) {
   /* comes into effect for screens between 321 and 480 pixels (inclusive) */
   #somethingorother {
     width: 340px ;
@@ -30,7 +30,7 @@
     .dropbtn {
         background-color: coral;
         -webkit-transition: 1s;
-        width: 200px;
+        width: 20% auto;
         color: white;
         padding: 16px;
         font-size: 16px;
