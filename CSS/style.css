@@ -2,7 +2,7 @@
    
     .button {width: 250px; height: auto; font-size: 40px; border-style: double;}
     .headback {background-image: linear-gradient(rgb(235, 218, 145), rgb(255, 255, 181)); width: 100%; height: auto; margin: 0 auto; padding: 0px;}
-    .backgron {background-color: white; width: 100%; height: auto; margin-top: 0%; padding-top: 0px;}
+    .backgron {background-color: white; width: 100%; height: auto; margin-top: 0%; padding-top: 0px; max-width: 1400px; margin: 0% auto;}
     .container {background-image: url("woodtexture1.jpg"); width: 100%; height: auto; margin: 0 auto; padding: 0px; padding-top: 0%;}
     
     .gambar {margin-left: 15px;}
@@ -115,7 +115,7 @@ padding: 5px;
 
 footer{
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 0px;
   color: rgb(243, 147, 23);
   background-image: linear-gradient(rgb(235, 218, 145), rgb(255, 255, 181));
   text-align: start;

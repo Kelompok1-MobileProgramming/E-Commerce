@@ -181,14 +181,15 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
+  margin-bottom: 0%;
   
-  background-color: #ebebeb;
+  background-color: lightyellow;
 }
 
 
 .wrap-login100 {
   width: 560px;
-  background: #fff;
+  background-image: linear-gradient(rgb(235, 218, 145), rgb(255, 255, 181));
   border-radius: 10px;
   position: relative;
 }
@@ -402,7 +403,7 @@ iframe {
   padding: 0 20px;
   min-width: 150px;
   height: 55px;
-  background-color: #333333;
+  background-color: orange;
   border-radius: 27px;
 
   -webkit-transition: all 0.4s;
@@ -412,7 +413,7 @@ iframe {
 }
 
 .login100-form-btn:hover {
-  background-color: #57b846;
+  background-color: blue;
 }
 
 
