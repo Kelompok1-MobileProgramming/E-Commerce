@@ -4,7 +4,7 @@
 @media screen and (min-width: 330px) and (max-width: 480px) {
   /* comes into effect for screens between 321 and 480 pixels (inclusive) */
   #somethingorother {
-    width: 340px ;
+    width: auto ;
   }
 }
     
