@@ -1,13 +1,16 @@
 @viewport {
   width: device-width ;
 }
+
 @media screen and (min-width: 330px) and (max-width: 480px) {
   /* comes into effect for screens between 321 and 480 pixels (inclusive) */
   #somethingorother {
     width: auto ;
   }
 }
-    
+    .logo {width: 50%; -webkit-transition: 1s}
+    .logo1 {width: 70%; -webkit-transition: 1s}
+
     .tabel {width: auto; height: auto; margin: 0 auto; border-style: solid;}
    
     .button {width: 250px; height: auto; font-size: 40px; border-style: double;}
@@ -20,16 +23,41 @@
     .gambar:hover {background-color: #ebf0f5; -webkit-transition: 1s;}
     .gambar1:hover {background-color: #ebf0f5; -webkit-transition: 1s;}
 
-    .baju {background-color: #5fb0f1; -webkit-transition: 1s;}
+    .baju {background-color: #5fb0f1; -webkit-transition: 1s; max-height: 400px;}
     .baju:hover {background-color: #74cff3;}
 
     .text {margin: 0%;font-size: 20px; opacity: 100%; text-decoration: none;}
 
-    
+    .signinbtn{
+      float: right; 
+      margin: 0%; 
+      margin-right: 20px;
+      background-image: linear-gradient(rgb(235, 218, 145), rgb(255, 255, 181)); 
+      width: 50px; 
+      height: 50px;
+      font-size:large; 
+      color:orange;
+      transition: transform .2s;
+      border-style: double;
+      border-radius: 10%;
+      outline-style: none;
+    }
+
+    .signinbtn:hover{
+      transform: scale(1.2);
+    }
+
+    .signinfont{
+      float: right; 
+      margin: 0%; 
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+      font-size:large; 
+      color:orange
+    }
 
     .dropbtn {
         background-color: coral;
-        -webkit-transition: 1s;
+        -webkit-transition: 0.5s;
         width: 258%;
         color: white;
         padding: 16px;
@@ -47,15 +75,13 @@
       .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #eaf1a7;
+        background-color: rgb(30, 120, 255);
         min-width: 180px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         font-size: 30px;
         
       }
-      
-     
 
       .dropdown-content a {
         color: black;
@@ -111,6 +137,8 @@
 .recom {width: 100%; height: auto; background-color: coral; margin: 0px; padding: 20px; padding-left: 300px;}
 
 .recomtext {margin: 0 auto; float: right; margin-top: 18%;}
+
+.darktext {color: blue;}
 
 .boxes{
   margin-top: 20px;
@@ -184,4 +212,134 @@ display: list-item;
 
 #li{
   list-style-type: none;
+}
+.change { 
+  cursor: pointer; 
+  border: 1px solid #555; 
+  border-radius: 40%; 
+  width: 20px; 
+  text-align: center; 
+  padding: 5px; 
+  margin-left: 8px; 
+} 
+.dark{ 
+  background-color: rgb(65, 13, 56); 
+  color: #e6e6e6; 
+} 
+.dark .gambar{
+  background-color: #350432;
+}
+
+.dark .gambar1{
+  background-color: #350432;
+}
+
+.dark .headback{
+  background-image: linear-gradient(rgb(61, 9, 50), rgb(80, 9, 68));
+}
+
+.dark .logo{
+  filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) 
+  contrast(80%);filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+}
+
+.dark .logo1{
+  filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) 
+  contrast(80%);filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+}
+
+.dark .dropbtn{
+  background-color: #350432;
+}
+
+.dark .dropdown:hover .dropbtn{
+  background-color: #630d5e;
+}
+
+.dark .dropdown-content{
+  background-color: darkblue;
+}
+.dark .home{
+  background-color: darkblue;
+}
+
+.dark .home:hover{
+  background-color: rgb(30, 120, 255);
+}
+
+.dark .darkbtn{
+  border-style: none;
+  background-color: darkblue;
+}
+
+.dark .darkbtn:hover{
+  border-style: none;
+  background-color: rgb(30, 120, 255);
+}
+
+.dark .baju{
+  background-color: rgb(59, 12, 59);
+}
+
+.dark .baju:hover{
+  background-color: darkmagenta;
+}
+
+.dark footer{
+  background-image: linear-gradient(rgb(61, 9, 50), rgb(80, 9, 68));
+}
+
+.dark footer h6{
+  color: #ffffff;
+}
+
+.dark footer li{
+  color: aqua;
+}
+
+.dark footer li:hover{
+  color: rgb(4, 243, 163);
+}
+
+.dark #searchbar{
+  background-color: #350432;
+}
+
+.dark .signinbtn{
+  color: darkviolet;
+  background-image: linear-gradient(rgb(61, 9, 50), rgb(80, 9, 68));;
+}
+
+.dark .signinfont{
+  color: darkviolet;
+}
+
+.dark .darktext{
+  color: white;
+}
+
+.dark .gambar:hover{
+  background-color: rgb(20, 20, 46);
+}
+
+.dark .gambar1:hover{
+  background-color: rgb(20, 20, 46);
+}
+
+.blink_me {
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  40% {
+  opacity: 0.55;
+  }
+}
+
+
+.dar {
+  background-color: orange;
+}
+.dark .dar{
+  background-color: tomato;
 }

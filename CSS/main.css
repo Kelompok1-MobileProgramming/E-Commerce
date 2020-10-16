@@ -168,7 +168,10 @@ iframe {
   width: 100%;
   margin: 0 auto;
 }
-
+.dark{ 
+  background-color: rgb(65, 13, 56); 
+  color: #e6e6e6; 
+} 
 .container-login100 {
   width: 100%;  
   min-height: 100vh;
@@ -185,7 +188,9 @@ iframe {
   
   background-color: lightyellow;
 }
-
+.dark .container-login100 {
+  background-color:rgb(65, 13, 56);
+}
 
 .wrap-login100 {
   width: 560px;
@@ -193,7 +198,25 @@ iframe {
   border-radius: 10px;
   position: relative;
 }
+.dark .wrap-login100 {
+  background-image: linear-gradient(rgb(80, 11, 65), rgb(80, 9, 68));
+}
 
+.dark .signtex {
+  color: rgb(245, 241, 241);
+}
+
+.dark .othertex {
+  color: rgb(211, 207, 207);
+}
+
+.dark .sign {
+  color: rgb(211, 207, 207);
+}
+
+.dark .sign:hover{
+  color: rgb(165, 163, 163);
+}
 
 /*==================================================================
 [ Form ]*/
@@ -416,6 +439,13 @@ iframe {
   background-color: blue;
 }
 
+.dark .login100-form-btn{
+  background-color: rgb(42, 6, 51);
+}
+
+.dark .login100-form-btn:hover{
+  background-color: rgb(59, 10, 71) ;
+}
 
 /*------------------------------------------------------------------
 [ Alert validate ]*/
@@ -498,3 +528,4 @@ iframe {
     padding-right: 15px;
   }
 }
+
