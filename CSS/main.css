@@ -16,17 +16,19 @@
     width: auto ;
   }
 }
+    .headback {background-image: linear-gradient(rgb(235, 218, 145), rgb(255, 255, 181)); 
+      width: 100%; 
+      height: auto; 
+      margin: 0% auto; 
+      padding: 0px;}
+
     .logo {width: 50%; 
       transition: 1s;}
 
     .logo1 {width: 70%; 
       transition: 1s;}
     
-    .headback {background-image: linear-gradient(rgb(235, 218, 145), rgb(255, 255, 181)); 
-      width: 100%; 
-      height: auto; 
-      margin: 0% auto; 
-      padding: 0px;}
+    
 
     .backgron {background-color: white; 
       width: 100%; 
