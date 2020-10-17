@@ -235,6 +235,12 @@ form.example::after {
 
 .darktext {
     color: blue;
+    font-size: min(5vw, 30px);
+}
+
+.harga {
+    color: green;
+    font-size: min(3.5vw, 20px);
 }
 
 .boxes {
