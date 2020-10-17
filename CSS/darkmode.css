@@ -1,0 +1,133 @@
+@import "Main.css";
+
+.change { 
+    cursor: pointer; 
+    border: 1px solid #555; 
+    border-radius: 40%; 
+    width: 20px; 
+    text-align: center; 
+    padding: 5px; 
+    margin-left: 8px; 
+  } 
+
+  .dark{ 
+    background-color: rgb(65, 13, 56); 
+    color: #e6e6e6; 
+  } 
+  
+
+    .dark .gambar{
+        background-color: #350432;
+    } 
+
+    .dark .gambar1{
+        background-color: #350432;
+    }
+
+    .dark .headback{
+        background-image: linear-gradient(rgb(61, 9, 50), rgb(80, 9, 68));
+    }
+
+    .dark .logo{
+        filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) 
+        contrast(80%);filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+    }
+
+    .dark .logo1{
+        filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) 
+        contrast(80%);filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+    }
+
+    .dark .dropbtn{
+        background-color: #350432;
+    }
+
+    .dark .dropdown:hover .dropbtn{
+        background-color: #630d5e;
+    }
+
+    .dark .dropdown-content{
+        background-color: darkblue;
+    }
+
+    .dark .home{
+        background-color: darkblue;
+    }
+
+    .dark .home:hover{
+        background-color: rgb(30, 120, 255);
+    }
+
+    .dark .darkbtn{
+        border-style: none;
+        background-color: darkblue;
+    }
+
+    .dark .darkbtn:hover{
+        border-style: none;
+        background-color: rgb(30, 120, 255);
+    }
+
+    .dark .baju{
+        background-color: rgb(59, 12, 59);
+    }
+
+    .dark .baju:hover{
+        background-color: darkmagenta;
+    }
+
+    .dark footer{
+        background-image: linear-gradient(rgb(61, 9, 50), rgb(80, 9, 68));
+    }
+
+    .dark footer h6{
+        color: #ffffff;
+    }
+
+    .dark footer li{
+        color: aqua;
+    }
+
+    .dark footer li:hover{
+        color: rgb(4, 243, 163);
+    }
+
+        .dark #searchbar{
+        background-color: #350432;
+    }
+
+    .dark .signinbtn{
+        color: darkviolet;
+        background-image: linear-gradient(rgb(61, 9, 50), rgb(80, 9, 68));;
+    }
+
+    .dark .signinfont{
+        color: darkviolet;
+    }
+
+    .dark .text{
+        color: white;
+    }
+
+    .dark .gambar:hover{
+        background-color: rgb(20, 20, 46);
+    }
+
+    .dark .gambar1:hover{
+        background-color: rgb(20, 20, 46);
+    }
+
+    .dar {
+        background-color: orange;
+    }
+    .dark .dar{
+        background-color: tomato;
+    }
+
+    .dark .buyer td{
+        color: rgb(255, 255, 255);
+    }
+
+    .dark .buyersorter{
+        color: rgb(255, 255, 255);
+    }
