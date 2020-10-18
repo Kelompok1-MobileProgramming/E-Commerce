@@ -447,6 +447,9 @@ iframe {
   background-color: rgb(59, 10, 71) ;
 }
 
+.dark .harga{
+  color: white;
+}
 /*------------------------------------------------------------------
 [ Alert validate ]*/
 
