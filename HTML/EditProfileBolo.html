@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <title>BoloBolo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/blink.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/avatar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main1.css">
+    <script src="../javascript/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="../images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../CSS/util.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+
+    <style type="text/css">
+        .back-link a {
+            color: #4ca340;
+            text-decoration: none;
+        }
+        
+        .back-link a:hover,
+        .back-link a:focus {
+            color: #408536;
+            text-decoration: none;
+        }
+        
+        .entry-header {
+            text-align: left;
+            margin: 0 auto 50px auto;
+            width: 80%;
+            max-width: 978px;
+            position: relative;
+            z-index: 10001;
+        }
+    </style>
+    <style>
+        .chromeframe {
+            background: #ccc;
+            color: #000;
+            padding: 0.2em 0;
+        }
+        
+        #loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+        }
+        
+        #loader {
+            display: block;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            width: 150px;
+            height: 150px;
+            margin: -75px 0 0 -75px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: #3498db;
+            -webkit-animation: spin 2s linear infinite;
+            /* Chrome, Opera 15+, Safari 5+ */
+            animation: spin 2s linear infinite;
+            /* Chrome, Firefox 16+, IE 10+, Opera */
+            z-index: 1001;
+        }
+        
+        #loader:before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: #e74c3c;
+            -webkit-animation: spin 3s linear infinite;
+            /* Chrome, Opera 15+, Safari 5+ */
+            animation: spin 3s linear infinite;
+            /* Chrome, Firefox 16+, IE 10+, Opera */
+        }
+        
+        #loader:after {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: #f9c922;
+            -webkit-animation: spin 1.5s linear infinite;
+            /* Chrome, Opera 15+, Safari 5+ */
+            animation: spin 1.5s linear infinite;
+            /* Chrome, Firefox 16+, IE 10+, Opera */
+        }
+        
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: rotate(0deg);
+                /* IE 9 */
+                transform: rotate(0deg);
+                /* Firefox 16+, IE 10+, Opera */
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: rotate(360deg);
+                /* IE 9 */
+                transform: rotate(360deg);
+                /* Firefox 16+, IE 10+, Opera */
+            }
+        }
+        
+        @keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: rotate(0deg);
+                /* IE 9 */
+                transform: rotate(0deg);
+                /* Firefox 16+, IE 10+, Opera */
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: rotate(360deg);
+                /* IE 9 */
+                transform: rotate(360deg);
+                /* Firefox 16+, IE 10+, Opera */
+            }
+        }
+        
+        #loader-wrapper .loader-section {
+            position: fixed;
+            top: 0;
+            width: 51%;
+            height: 100%;
+            background: #222222;
+            z-index: 1000;
+            -webkit-transform: translateX(0);
+            /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(0);
+            /* IE 9 */
+            transform: translateX(0);
+            /* Firefox 16+, IE 10+, Opera */
+        }
+        
+        #loader-wrapper .loader-section.section-left {
+            left: 0;
+        }
+        
+        #loader-wrapper .loader-section.section-right {
+            right: 0;
+        }
+        /* Loaded */
+        
+        .loaded #loader-wrapper .loader-section.section-left {
+            -webkit-transform: translateX(-100%);
+            /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(-100%);
+            /* IE 9 */
+            transform: translateX(-100%);
+            /* Firefox 16+, IE 10+, Opera */
+            -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+            transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        }
+        
+        .loaded #loader-wrapper .loader-section.section-right {
+            -webkit-transform: translateX(100%);
+            /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(100%);
+            /* IE 9 */
+            transform: translateX(100%);
+            /* Firefox 16+, IE 10+, Opera */
+            -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+            transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        }
+        
+        .loaded #loader {
+            opacity: 0;
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+        
+        .loaded #loader-wrapper {
+            visibility: hidden;
+            -webkit-transform: translateY(-100%);
+            /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateY(-100%);
+            /* IE 9 */
+            transform: translateY(-100%);
+            /* Firefox 16+, IE 10+, Opera */
+            -webkit-transition: all 0.3s 1s ease-out;
+            transition: all 0.3s 1s ease-out;
+        }
+        
+        #content {
+            margin: 0 auto;
+            width: 100%;
+        }
+        /*
+    * Image replacement
+    */
+        
+        .ir {
+            background-color: transparent;
+            border: 0;
+            overflow: hidden;
+            /* IE 6/7 fallback */
+            *text-indent: -9999px;
+        }
+        
+        .ir:before {
+            content: "";
+            display: block;
+            width: 0;
+            height: 150%;
+        }
+        /*
+    * Hide from both screenreaders and browsers: h5bp.com/u
+    */
+        
+        .hidden {
+            display: none !important;
+            visibility: hidden;
+        }
+        /*
+    * Hide only visually, but have it available for screenreaders: h5bp.com/v
+    */
+        
+        .visuallyhidden {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+        /*
+    * Extends the .visuallyhidden class to allow the element to be focusable
+    * when navigated to via the keyboard: h5bp.com/p
+    */
+        
+        .visuallyhidden.focusable:active,
+        .visuallyhidden.focusable:focus {
+            clip: auto;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            position: static;
+            width: auto;
+        }
+        /*
+    * Hide visually and from screenreaders, but maintain layout
+    */
+        
+        .invisible {
+            visibility: hidden;
+        }
+    </style>
+
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            padding: 0;
+            line-height: .9;
+            font-weight: 700;
+            color: #333;
+        }
+        
+        .profile-block {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            max-width: 300px;
+        }
+        
+        .profile-block .user-heading {
+            background: orange none repeat scroll 0 0;
+            border-radius: 4px 4px 0 0;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .profile-block .user-heading a img {
+            border-radius: 50%;
+            margin: auto auto 10px;
+            display: block;
+            height: 140px;
+            width: 140px;
+            border: 10px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .profile-block .user-heading h1 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 22px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        
+        .profile-block .user-heading p {
+            color: #fff;
+            font-size: 12px;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        
+        .profile-block ul {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .profile-block ul>li {
+            border-bottom: 1px solid #ddd;
+            line-height: 30px;
+            margin-top: 0;
+        }
+        
+        .profile-block .nav>li>a {
+            background: #e7e7e7;
+            border-radius: 0;
+            color: #000;
+            display: block;
+            font-size: 14px;
+            padding: 6px 18px;
+            position: relative;
+            text-align: left;
+            text-decoration: none;
+        }
+        
+        .profile-block ul>li>a>i {
+            color: #000;
+            font-size: 16px;
+            padding-right: 10px;
+        }
+        
+        .profile-block ul>li>a:hover,
+        .profile-block ul>li>a:focus,
+        .profile-block ul li.active a {
+            background: #fff !important;
+            border-radius: 0;
+            color: #000 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
+    <!-- Demo content -->
+    <div id="demo-content">
+
+
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+        </div>
+
+        <div id="content">
+
+            <body class="backgron">
+
+                <div>
+                    <div class="">
+                        <div class="headback">
+                            <div class="mode" style="padding-top: 0.5%">
+                                <div style="margin:1%; margin-bottom: 0%;">Dark mode:
+                                    <span class="change">OFF</span>
+
+                                    <p class="signinfont">Welcome back!</p>
+
+
+                                    <div class="dropdown" style="float: right;">
+                                        <button class="bt dropdown-toggle, signinbtn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 0%;">
+                                            <img src="../img/cartoon.png" alt="" method="GET" width="35px" height="35px">
+                                            </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="padding : 0%; height: 0%; padding-top: 0%; margin-top: 0%" ;>
+                                            <div class="profile-block">
+                                                <div class="panel text-center">
+                                                    <div class="user-heading">
+                                                        <a href="#"><img src="https://i.pinimg.com/originals/0d/07/c2/0d07c25cb7c429a80213e31a41fd853b.jpg" alt="" title=""></a>
+                                                        <h1>Marlee</h1>
+                                                        <p>@marleekatz</p>
+                                                        <p>Wallet Balance $0.00</p>
+                                                    </div>
+                                                    <ul class="nav nav-pills nav-stacked">
+                                                        <li style="width: 100%;"><a href="ProfileBolo.html"><i class="fa fa-user"></i>Profile</a></li>
+                                                        <li style="width: 100%;"><a href="EditProfileBolo.html"><i class="fa fa-pencil-square-o"></i>Edit profile</a></li>
+                                                        <li style="width: 100%;"><a href="SubscriptionHistoryBolo.html"><i class="fa fa-usd" aria-hidden="true"></i>Subscription History</a></li>
+                                                        <li style="width: 100%;"><a href="TransactionHistoryBolo.html"><i class="fa fa-usd" aria-hidden="true"></i>Transaction History</a></li>
+                                                        <li style="width: 100%;"><a href="Main.html"><i class="fa fa-sign-out"></i>Logout</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br><br>
+                            <h1 class="blink_me" style=" text-align: center;"><img class="logo" src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/bolo1.png?raw=true"></h1>
+                            <p class="blink_me" style="text-align: center;"><img class="logo1" src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/bolobolobelanja.png?raw=true"></p>
+                            <br>
+
+                            <div class="dropdown">
+                                <button class="dropbtn">MENU</button>
+                                <div class="dropdown-content">
+                                    <a href="Main.html" class="home" style="padding-top: 3%; color: white;">Home</a>
+                                    <a href="signin.html" class="home" style="padding-top: 3%; color: white;">Performance</a>
+                                    <div class="dropdown dropright">
+                                        <button type="button" class="btn btn-primary dropdown-toggle, darkbtn" data-toggle="dropdown" style="width: 200px; padding-top: 3%; outline: none;">
+                                Products
+                                </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="Recomended.html">Recommended</a>
+                                            <a class="dropdown-item" href="popular.html">Popular</a>
+                                            <a class="dropdown-item" href="product.html">View All Products</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input id="searchbar" onkeyup="search_item()" type="text" name="search" placeholder="Search items..">
+                        </div>
+
+                        <br>
+
+                        <div>
+
+                        </div>
+
+                        <script src="../Javascript/search.js"></script>
+                        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                        <script>
+                            window.jQuery || document.write('<script src="../javascript/vendor/jquery-1.9.1.min.js"><\/script>')
+                        </script>
+                        <script>
+                            $(document).ready(function() {
+
+                                setTimeout(function() {
+                                    $('body').addClass('loaded');
+                                    $('h1').css('color', '#222222');
+                                }, 3000);
+                            });
+                        </script>
+                        <footer>
+                            <section class="boxes">
+                                <div class="container">
+
+                                    <div class="box">
+                                        <h6><b>BoloBolo</b></H6>
+                                        <ul>
+                                            <a href="AboutBoloBolo.html" style="text-decoration: none;">
+                                                <li> About BoloBolo</li>
+                                            </a>
+                                            <a href="DictionaryBolo.html" style="text-decoration: none;">
+                                                <li> Dictionary BoloBolo </li>
+                                            </a>
+                                            <a href="OfficialStoreBolo.html" style="text-decoration: none;">
+                                                <li> Official Store </li>
+                                            </a>
+                                            <a href="Application.html" style="text-decoration: none;">
+                                                <li> Application BoloBolo </li>
+                                            </a>
+                                            <a href="Deals.html" style="text-decoration: none;">
+                                                <li> Deals BoloBolo </li>
+                                            </a>
+                                            <a href="Discount.html" style="text-decoration: none;">
+                                                <li> Discount BoloBolo </li>
+                                            </a>
+                                        </ul>
+                                    </div>
+
+                                    <div class="box">
+                                        <h6><b>Buy</b></h6>
+                                        <ul>
+                                            <a href="#" style="text-decoration: none;">
+                                                <li> Category</li>
+                                            </a>
+                                            <a href="Recomended.html" style="text-decoration: none;">
+                                                <li> Recommended</li>
+                                            </a>
+                                            <a href="popular.html" style="text-decoration: none;">
+                                                <li> Popular</li>
+                                            </a>
+                                            <a href="product.html" style="text-decoration: none;">
+                                                <li> All Products</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="box">
+                                        <h6><b>Sell</b></h6>
+                                        <ul>
+                                            <a href="#" style="text-decoration: none;">
+                                                <li> Education Seller</li>
+                                            </a>
+                                            <a href="#" style="text-decoration: none;">
+                                                <li> BoloBolo Partners</li>
+                                            </a>
+                                            <a href="#" style="text-decoration: none;">
+                                                <li> Official Store Lists</li>
+                                            </a>
+                                            <br></br>
+                                        </ul>
+                                    </div>
+                                    <aside class="boxes">
+                                        <h6><b>Help Center</b></h6>
+                                        <v1>
+                                            <a href="bolobolocare.html" style="text-decoration: none;">
+                                                <li>BoloBolo Care</li>
+                                            </a>
+                                            <a href="TermsAndCondition.html" style="text-decoration: none;">
+                                                <li>Terms and Condition</li>
+                                            </a>
+                                            <a href="PrivacyPolicy.html" style="text-decoration: none;">
+                                                <li>Privacy Policy</li>
+                                            </a>
+                                        </v1>
+                                    </aside>
+                                </div>
+                            </section>
+                        </footer>
+                    </div>
+                    <script>
+                        $(".change").on("click", function() {
+                            if ($("body").hasClass("dark")) {
+                                $("body").removeClass("dark");
+                                $(".change").text("OFF");
+                            } else {
+                                $("body").addClass("dark");
+                                $(".change").text("ON");
+                            }
+                        });
+                    </script>
+            </body>
+            </div>
+        </div>
+</body>
+
+</html>
