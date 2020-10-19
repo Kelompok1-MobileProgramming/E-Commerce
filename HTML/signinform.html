@@ -288,35 +288,56 @@
           background-color: #fff;
           outline: none;
         }
-        
-        /* Set a style for all buttons */
-        button {
-          background-color: #4CAF50;
-          color: white;
-          padding: 14px 20px;
-          margin: 8px 0;
-          border: none;
-          cursor: pointer;
-          width: 100%;
-          opacity: 0.9;
+
+        /*------------------------------------------------------------------
+        [ Button ]*/
+        .container-login100-form-btn {
+            width: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
         }
-        
-        button:hover {
-          opacity:1;
+
+        .login100-form-btn {
+            font-family: Raleway-Bold;
+            font-size: 16px;
+            color: #fff;
+            line-height: 1.2;
+
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            min-width: 150px;
+            height: 55px;
+            background-color: orange;
+            border-radius: 27px;
+
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            transition: all 0.4s;
         }
-        
-        /* Extra styles for the cancel button */
-        .cancelbtn {
-          padding: 14px 20px;
-          background-color: #f44336;
+
+        .login100-form-btn:hover {
+            background-color: blue;
         }
-        
-        /* Float cancel and signup buttons and add an equal width */
-        .cancelbtn, .signupbtn {
-          float: left;
-          width: 50%;
+
+        .dark .login100-form-btn{
+            background-color: rgb(42, 6, 51);
         }
-        
+
+        .dark .login100-form-btn:hover{
+            background-color: rgb(59, 10, 71) ;
+        }
+
         .dark{ 
             background-color: rgb(65, 13, 56); 
             color: #e6e6e6; 
@@ -390,12 +411,7 @@
         .dark .font{
             color: white;
         }
-        /* Change styles for cancel button and signup button on extra small screens */
-        @media screen and (max-width: 300px) {
-          .cancelbtn, .signupbtn {
-             width: 100%;
-          }
-        }
+
         </style>
 </head>
 
@@ -425,7 +441,7 @@
         
                     <br>
                     <div class="container-login100">
-                    <form class="modal-content" action="/action_page.php">
+                    <form class="modal-content" action="Member.html">
                       <div class="containerx">
                          <span class="login100-form-title p-b-32, signtex">
                              Sign Up
@@ -447,10 +463,11 @@
         
                          <p class="font">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
         
-                         <div class="clearfix">
-                         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                         <button type="submit" class="signupbtn">Sign Up</button>
-                         </div>
+                        <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" href="../HTML/Member.html">
+                                    Sign Up
+                                </button>
+                        </div>
                      </div>
                     </form>
                     </div>
