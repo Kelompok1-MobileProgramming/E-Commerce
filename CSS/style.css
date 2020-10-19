@@ -259,11 +259,11 @@ form.example::after {
 }
 
 .boxes b {
-    font-size: min(1.5vw, 40px);
+    font-size: min(1.5vw, 25px);
 }
 
 .boxes li {
-    font-size: min(1vw, 25px);
+    font-size: min(1vw, 15px);
 }
 
 footer {

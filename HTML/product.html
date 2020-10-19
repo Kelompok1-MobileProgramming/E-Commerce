@@ -298,10 +298,66 @@
         .invisible {
             visibility: hidden;
         }
+
+
+        .bg-modal {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        margin: 0px auto;
+    }
+
+    .modal-content{
+        width: 50%;
+        height: 50%;
+        background-color: white;
+        border-radius: 4px;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+    }
+
+    .isi{
+        width: 50%;
+        display: block;
+        margin: 15px auto;
+        position: relative;
+    }
+
+    .close{
+        position: absolute;
+        top: 0;
+        right: 14px;
+        font-size: 42px;
+        
+        cursor: pointer;}
+
+    .dark .modal-content{
+        background-color: rgb(58, 9, 55);
+    }
     </style>
 </head>
 
 <body>
+
+    <div class="bg-modal"> 
+        <div class="modal-content">
+            <div class="close">x</div>
+            <img src="../img/cartoon.png" style="width: 80px; height: 80px; margin: 0% auto;">
+            <form action="">
+                <input class="isi" type="text">
+                <p>maaf kami masih dalam pengembangan :(</p>
+                <p>untuk sekarang semua detail mengarah ke description yang sama</p>
+                <a href="Description.html" class="button">Detail</a>
+            </form>
+        </div>
+    </div>
     <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
@@ -362,7 +418,9 @@
                             <h2 class="mt-3, items, list-unstyled">ALL PRODUCTS</h2>
                             <hr>
                             <div class="row mb-4">
+
                                 <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="momogi">
                                     <div class="gambar" style="width: 360px;">
                                         <div class="col-sm mx-0 px-5 py-3 border rounded">
                                             <div class="row">
@@ -376,9 +434,11 @@
                                             </div>
                                         </div>
                                     </div>
+                                    </a>
                                 </li>
 
                                 <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="sunsilk">
                                     <div class="gambar" style="width: 360px;">
                                         <div class="col-sm mx-0.9 px-5 py-3 border rounded">
                                             <div class="row">
@@ -392,8 +452,10 @@
                                             </div>
                                         </div>
                                     </div>
+                                    </a>
                                 </li>
                                 <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="pensilmurah">
                                     <div class="gambar" style="width: 360px;">
                                         <div class="col-sm mx-0.9 px-5 py-3 border rounded">
                                             <div class="row">
@@ -407,11 +469,13 @@
                                             </div>
                                         </div>
                                     </div>
+                                    </a>
                                 </li>
                             </div>
 
                             <div class="row mb-4">
                                 <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="samsung">
                                     <div class="gambar" style="width: 360px;">
                                         <div class="col-sm mx-0 px-5 py-3 border rounded">
                                             <div class="row">
@@ -425,8 +489,10 @@
                                             </div>
                                         </div>
                                     </div>
+                                    </a>
                                 </li>
                                 <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="roti">
                                     <div class="gambar" style="width: 360px;">
                                         <div class="col-sm mx-0 px-5 py-3 border rounded">
                                             <div class="row">
@@ -440,9 +506,10 @@
                                             </div>
                                         </div>
                                     </div>
+                                    </a>
                                 </li>
                                 <li class="items , list-unstyled">
-                                    <a href="#" class="list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="maechee">
                                         <div class="gambar" style="width: 360px;">
                                             <div class="col-sm mx-0 px-5 py-3 border rounded">
                                                 <div class="row">
@@ -462,7 +529,7 @@
 
                             <div class="row mb-4">
                                 <li class="items , list-unstyled">
-                                    <a href="#" class="list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="masker">
                                         <div class="gambar" style=" width: 360px;">
                                             <div class="col-sm mx-0 px-5 py-3 border rounded">
                                                 <div class="row">
@@ -480,7 +547,7 @@
                                 </li>
 
                                 <li class="items , list-unstyled">
-                                    <a href="#" class="list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="jeans">
                                         <div class="gambar" style="width: 360px;">
                                             <div class="col-sm mx-0 px-5 py-3 border rounded">
                                                 <div class="row">
@@ -498,7 +565,7 @@
                                 </li>
 
                                 <li class="items , list-unstyled">
-                                    <a href="#" class="list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="ig">
                                         <div class="gambar" style=" width: 360px;">
                                             <div class="col-sm mx-0 px-5 py-3 border rounded">
                                                 <div class="row">
@@ -519,7 +586,7 @@
 
                             <div class="row mb-4">
                                 <li class="items , list-unstyled">
-                                    <a href="#" class="list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="kotak">
                                         <div class="gambar" style=" width: 360px;">
                                             <div class="col-sm mx-0 px-5 py-3 border rounded">
                                                 <div class="row">
@@ -537,7 +604,7 @@
                                 </li>
 
                                 <li class="items , list-unstyled">
-                                    <a href="#" class="list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="spidol">
                                         <div class="gambar" style=" width: 360px;">
                                             <div class="col-sm mx-0 px-5 py-3 border rounded">
                                                 <div class="row">
@@ -555,7 +622,7 @@
                                 </li>
 
                                 <li class="items , list-unstyled">
-                                    <a href="#" class="list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="beras">
                                         <div class="gambar" style=" width: 360px;">
                                             <div class="col-sm mx-0 px-5 py-3 border rounded">
                                                 <div class="row">
@@ -576,7 +643,7 @@
 
                             <div class="row mb-4">
                                 <li class="items , list-unstyled">
-                                    <a href="#" class="list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="airpods">
                                         <div class="gambar" style=" width: 360px;">
                                             <div class="col-sm mx-0 px-5 py-3 border rounded">
                                                 <div class="row">
@@ -594,7 +661,7 @@
                                 </li>
 
                                 <li class="items , list-unstyled">
-                                    <a href="#" class="list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="potabi">
                                         <div class="gambar" style=" width: 360px;">
                                             <div class="col-sm mx-0 px-5 py-3 border rounded">
                                                 <div class="row">
@@ -612,7 +679,7 @@
                                 </li>
 
                                 <li class="items , list-unstyled">
-                                    <a href="#" class="list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="japota">
                                         <div class="gambar" style=" width: 360px;">
                                             <div class="col-sm mx-0 px-5 py-3 border rounded">
                                                 <div class="row">
@@ -631,6 +698,7 @@
                             </div>
                             <div class="row mb-4">
                                 <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="baju">
                                     <div class="gambar" style=" width: 360px;">
                                         <div class="col-sm mx-0 px-5 py-3 border rounded">
                                             <div class="row">
@@ -644,10 +712,13 @@
                                             </div>
                                         </div>
                                     </div>
+                                    </a>
                                 </li>
 
                                 <li class="items , list-unstyled">
+                                    
                                     <div class="gambar" style=" width: 360px;">
+                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="keti">
                                         <div class="col-sm mx-0 px-5 py-3 border rounded">
                                             <div class="row">
                                                 <div class="col-sm">
@@ -660,9 +731,11 @@
                                             </div>
                                         </div>
                                     </div>
+                                </a>
                                 </li>
 
                                 <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="mobil">
                                     <div class="gambar" style=" width: 360px;">
                                         <div class="col-sm mx-0 px-5 py-3 border rounded">
                                             <div class="row">
@@ -676,11 +749,14 @@
                                             </div>
                                         </div>
                                     </div>
+                                    </a>
                                 </li>
                             </div>
                             <hr>
                     </div>
                     </ol>
+
+                    
                     <script src="../Javascript/search.js"></script>
                     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
                     <script>
@@ -775,6 +851,7 @@
                         </section>
                     </footer>
                 </div>
+                <script src="../Javascript/proitem.js"></script>
                 <script>
                     $(".change").on("click", function() {
                         if ($("body").hasClass("dark")) {
