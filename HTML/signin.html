@@ -325,7 +325,7 @@
                                 Username
                             </span>
                                         <div class="wrap-input100 validate-input m-b-36" data-validate="Username is required">
-                                            <input class="input100" type="text" name="username">
+                                            <input id="name" class="input100" type="name" name="name" required>
                                             <span class="focus-input100"></span>
                                         </div>
 
@@ -336,13 +336,13 @@
                                             <span class="btn-show-pass">
                                     <i class="fa fa-eye"></i>
                                 </span>
-                                            <input class="input100" type="password" name="pass">
+                                            <input class="input100" type="password" required>
                                             <span class="focus-input100"></span>
                                         </div>
 
                                         <div class="flex-sb-m w-full p-b-48">
                                             <div class="contact100-form-checkbox">
-                                                <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                                                <input class="input-checkbox100" id="ckb1" type="checkbox">
                                                 <label class="label-checkbox100" for="ckb1">
                                         <p class="signtex">Remember me</p>
                                     </label>
@@ -367,7 +367,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <script>
                             // Get the modal
                             var modal = document.getElementById('id01');
@@ -489,6 +488,7 @@
                         <!--===============================================================================================-->
                         <script src="../Javascript/main.js"></script>
                     </div>
+                   
                     <script>
                         $(".change").on("click", function() {
                             if ($("body").hasClass("dark")) {
@@ -500,6 +500,7 @@
                             }
                         });
                     </script>
+                    
             </body>
             </div>
         </div>
