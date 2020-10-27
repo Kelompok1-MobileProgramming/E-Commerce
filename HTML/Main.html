@@ -531,6 +531,23 @@
         background-color: #000;
     }
 </style>
+<style>
+    .main {
+        display: block;
+    }
+
+    .popular {
+        display: none;
+    }
+
+    .recom{
+        display: none;
+    }
+
+    .product{
+        display: none;
+    }
+</style>
 
 </head>
 
@@ -607,16 +624,16 @@
                             <div class="dropdown">
                                 <button class="dropbtn">MENU</button>
                                 <div class="dropdown-content">
-                                    <a href="Main.html" class="home" style="padding-top: 3%; color: white;">Home</a>
+                                    <a href="#" id="main" class="home" style="padding-top: 3%; color: white;">Home</a>
                                     <a href="signin.html" class="home" style="padding-top: 3%; color: white;">Performance</a>
                                     <div class="dropdown dropright">
                                         <button type="button" class="btn btn-primary dropdown-toggle, darkbtn" data-toggle="dropdown" style="width: 200px; padding-top: 3%; outline: none;">
                                         Products
                                         </button>
                                         <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="Recomended.html">Recommended</a>
-                                            <a class="dropdown-item" href="popular.html">Popular</a>
-                                            <a class="dropdown-item" href="product.html">View All Products</a>
+                                            <a class="dropdown-item" href="#" id="recom">Recommended</a>
+                                            <a class="dropdown-item" href="#" id="pop">Popular</a>
+                                            <a class="dropdown-item" href="#" id="product">View All Products</a>
                                         </div>
                                     </div>
                                 </div>
@@ -625,16 +642,633 @@
                         </div>
                         <br>
 
-                        <div class="container">
-                            <ol id="list" class="list-unstyled" style="margin : 0%;">
-                                <h2 class="mt-3, items, list-unstyled">TOP SEARCH</h2>
-                                <hr>
+                        <div class="main">
+                            <div class="container">
+                                <ol id="list" class="list-unstyled" style="margin : 0%;">
+                                    <h2 class="mt-3, items, list-unstyled">TOP SEARCH</h2>
+                                    <hr>
+    
+                                    <div class="row mb-4">
+    
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="baju">
+                                                <div class="gambar" style=" width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Baju Polos Putih</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 80,999</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/baju.jpg?raw=true" method="GET" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+    
+    
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="keti">
+                                                <div class="gambar" style="width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Tiket<br>KETI SHOW</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 1,000,000</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/keti.png?raw=true" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+    
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="mobil">
+                                                <div class="gambar" style=" min-width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Mobil <br>Mobilan</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 35,500</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/toys.jpg?raw=true" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    </div>
+    
+                                    </a>
+                                    </li>
+                                    <hr>
+    
+                                    <h2 class="mt-3, items, list-unstyled">PRODUCT</h2>
+    
+    
+                                    <li class="items , list-unstyled">
+                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="momogi">
+                                        <div class="gambar1">
+                                            <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                <div class="row">
+                                                    <div class="col-sm">
+                                                        <h5 class="my-2 text-primary, darktext">Momogi</h5>
+                                                        <h4 class="text-success, harga">IDR 20,000</h4>
+                                                    </div>
+                                                    <div class="col-sm text-right">
+                                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/momogi.jpg?raw=true" method="GET" width="84" height="84">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </li>
+    
+                                    <li class="items , list-unstyled">
+                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="sunsilk">
+                                        <div class="gambar1">
+                                            <div class="col-sm mx-0.9 px-5 py-3 border rounded">
+                                                <div class="row">
+                                                    <div class="col-sm">
+                                                        <h5 class="my-2 text-primary, darktext">Sunsilk</h5>
+                                                        <h4 class="text-success, harga">IDR 25,999</h4>
+                                                    </div>
+                                                    <div class="col-sm text-right">
+                                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/sunsilk.jpg?raw=true" width="84" height="84">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="items , list-unstyled">
+                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="pensilmurah">
+                                        <div class="gambar1">
+                                            <div class="col-sm mx-0.9 px-5 py-3 border rounded">
+                                                <div class="row">
+                                                    <div class="col-sm">
+                                                        <h5 class="my-2 text-primary, darktext">Pensil Murah</h5>
+                                                        <h4 class="text-success, harga">IDR 1,000</h4>
+                                                    </div>
+                                                    <div class="col-sm text-right">
+                                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/pensil.jpg?raw=true" width="84" height="84">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="items , list-unstyled">
+                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="samsung">
+                                        <div class="gambar1">
+                                            <div class="col-sm mx-0.9 px-5 py-3 border rounded">
+                                                <div class="row">
+                                                    <div class="col-sm">
+                                                        <h5 class="my-2 text-primary, darktext">Samsung</h5>
+                                                        <h4 class="text-success, harga">IDR 2,500,000</h4>
+                                                    </div>
+                                                    <div class="col-sm text-right">
+                                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/samsung.jpg?raw=true" method="GET" width="84" height="84">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </li>
+                                    <li class="items , list-unstyled">
+                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="roti">
+                                        <div class="gambar1">
+                                            <div class="col-sm mx-0.9 px-5 py-3 border rounded">
+                                                <div class="row">
+                                                    <div class="col-sm">
+                                                        <h5 class="my-2 text-primary, darktext">Sari Roti</h5>
+                                                        <h4 class="text-success, harga">IDR 13,000</h4>
+                                                    </div>
+                                                    <div class="col-sm text-right">
+                                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/sariroti.jpg?raw=true" width="84" height="84">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="items , list-unstyled">
+                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="maechee">
+                                        <div class="gambar1">
+                                            <div class="col-sm mx-0.9 px-5 py-3 border rounded">
+                                                <div class="row">
+                                                    <div class="col-sm">
+                                                        <h5 class="my-2 text-primary, darktext">Maechee</h5>
+                                                        <h4 class="text-success, harga">IDR 6,999</h4>
+                                                    </div>
+                                                    <div class="col-sm text-right">
+                                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/maichi.jpg?raw=true" width="84" height="84">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </li>
+    
+    
+                                    <h2 class="mt-3, items, list-unstyled">RECOMMENDED</h2>
+                                    <hr>
+                                    <div class="row mb-4">
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="masker">
+                                                <div class="gambar" style=" width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Masker Hitam</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 3,999</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/masker.jpg?raw=true" method="GET" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+    
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="jeans">
+                                                <div class="gambar" style="width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Jeans sobek</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 88,000</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/jeans.jpg?raw=true" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+    
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="ig">
+                                                <div class="gambar" style=" width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Like IG</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 3,000</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/jual.jpg?raw=true" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </div>
+    
+    
+                                    <div class="row mb-4">
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="kotak">
+                                                <div class="gambar" style=" width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Kotak Bekal</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 10,000</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/kotak.jpg?raw=true" method="GET" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+    
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="spidol">
+                                                <div class="gambar" style=" width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Spidol Snowman</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 8,000</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/spidol.jpg?raw=true" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+    
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="beras">
+                                                <div class="gambar" style=" width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Beras</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 19,999</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/beras.jpg?raw=true" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </div>
+    
+    
+                                    <div class="row mb-4">
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="airpods">
+                                                <div class="gambar" style=" width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Airpods</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 750,999</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/airpods.jpg?raw=true" method="GET" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+    
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="potabi">
+                                                <div class="gambar" style=" width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Potabi</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 8,500</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://assets.klikindomaret.com/share/20080040/20080040_1.jpg" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+    
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="japota">
+                                                <div class="gambar" style=" width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Japoouta</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 10,000</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Andri-F/perkembangan/blob/master/japoota.jpg?raw=true" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </div>
+                            </div>
+    
+                            <hr>
+                            <div class="mySlides fade">
+                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="bajuslide">
+                                    <div class="col-sm mx-6 px-6 py-5">
+                                        <div class="row">
+                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/baju.jpg?raw=true" method="GET" width="19%" height="19%" style="margin-left: 10%; margin-right: 0%;">
+                                            <div class="col-sm" style="text-align: center; margin: 0%; padding: 0%; width: 50%; float: right;">
+                                                <h2 class="my-2 text-primary" style="font-size: 3vw; margin: 0%; padding: 0%; font-size: min(3vw, 45px);">Baju Polos Putih</h2>
+                                                <p class="text-success" style="font-size: 2vw; margin: 0%; padding: 0%; font-size: min(2vw, 20px);">Baju Polos Putih <br>Size: XS, S, M, L, XL
+                                                    <br>100% Cotton Combed <br> - Bahan adem <br> - Menyerap keringat <br> - Serat halus</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+    
+                            <div class="mySlides fade">
+                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="samsungslide">
+                                    <div class="col-sm mx-6 px-6 py-5">
+                                        <div class="row">
+                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/samsung.jpg?raw=true" method="GET" width="19%" height="19%" style="margin-left: 10%; margin-right: 0%;">
+                                            <div class="col-sm" style="text-align: center; margin: 0%; padding: 0%; width: 50%; float: right;">
+                                                <h2 class="my-2 text-primary" style="font-size: 3vw; margin: 0%; padding: 0%; font-size: min(3vw, 45px);">Samsung</h2>
+                                                <p class="text-success" style="font-size: 2vw; margin: 0%; padding: 0%; font-size: min(2vw, 20px);">Samsung A51 <br>Specifications:
+                                                    <br> - Kamera utama wide 48 MP<br> - Kamera ultrawide 12 MP <br> - Kamera makro 5 MP <br> - Kamera depth sensor 5 MP <br> - RAM 6 GB dan memori internal 128 GB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+    
+                            <div class="mySlides fade">
+                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="airpodsslide">
+                                    <div class="col-sm mx-6 px-6 py-5">
+                                        <div class="row">
+                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/airpods.jpg?raw=true" method="GET" width="19%" height="19%" style="margin-left: 10%; margin-right: 0%;">
+                                            <div class="col-sm" style="text-align: center; margin: 0%; padding: 0%; width: 50%; float: right;">
+                                                <h2 class="my-2 text-primary" style="font-size: 3vw; margin: 0%; padding: 0%; font-size: min(3vw, 45px);">Airpods</h2>
+                                                <p class="text-success" style="font-size: 2vw; margin: 0%; padding: 0%; font-size: min(2vw, 20px);">Original Apple Airpods <br>Specifications:
+                                                    <br> - Bluetooth/Wireless<br> - Waterproof <br> - Built in Microphone <br> - 24 Hours Battery Supply</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="text-align:center">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <hr>
+                            <div class="container">
+    
+                                <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="baju2">
+                                    <div class="gambar1">
+                                        <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                    <h5 class="my-2 text-primary, darktext">Baju Polos Putih</h5>
+                                                    <h4 class="text-success, harga">IDR 80,999</h4>
+                                                </div>
+                                                <div class="col-sm text-right">
+                                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/baju.jpg?raw=true" method="GET" width="84" height="84">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                </li>
+    
+                                <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="keti2">
+                                    <div class="gambar1">
+                                        <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                    <h5 class="my-2 text-primary, darktext">Tiket KETI SHOW</h5>
+                                                    <h4 class="text-success, harga">IDR 1,000,000</h4>
+                                                </div>
+                                                <div class="col-sm text-right">
+                                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/keti.png?raw=true" method="GET" width="84" height="84">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </li>
+    
+                                <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="mobil2">
+                                    <div class="gambar1">
+                                        <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                    <h5 class="my-2 text-primary, darktext">Mobil Mobilan</h5>
+                                                    <h4 class="text-success, harga">IDR 35,500</h4>
+                                                </div>
+                                                <div class="col-sm text-right">
+                                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/toys.jpg?raw=true" method="GET" width="84" height="84">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </li>
+    
+                                <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="masker2">
+                                    <div class="gambar1">
+                                        <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                    <h5 class="my-2 text-primary, darktext">Masker Hitam</h5>
+                                                    <h4 class="text-success, harga">IDR 3,999</h4>
+                                                </div>
+                                                <div class="col-sm text-right">
+                                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/masker.jpg?raw=true" method="GET" width="84" height="84">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </li>
+    
+                                <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="jeans2">
+                                    <div class="gambar1">
+                                        <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                    <h5 class="my-2 text-primary, darktext">Jeans sobek</h5>
+                                                    <h4 class="text-success, harga">IDR 88,000</h4>
+                                                </div>
+                                                <div class="col-sm text-right">
+                                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/jeans.jpg?raw=true" method="GET" width="84" height="84">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </li>
+    
+                                <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="ig2">
+                                    <div class="gambar1">
+                                        <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                    <h5 class="my-2 text-primary, darktext">Like IG</h5>
+                                                    <h4 class="text-success, harga">IDR 3,000</h4>
+                                                </div>
+                                                <div class="col-sm text-right">
+                                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/jual.jpg?raw=true" method="GET" width="84" height="84">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </li>
+    
+                                <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="kotak2">
+                                    <div class="gambar1">
+                                        <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                    <h5 class="my-2 text-primary, darktext">Kotak Bekal</h5>
+                                                    <h4 class="text-success, harga">IDR 10,000</h4>
+                                                </div>
+                                                <div class="col-sm text-right">
+                                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/kotak.jpg?raw=true" method="GET" width="84" height="84">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </li>
+    
+                                <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="spidol2">
+                                    <div class="gambar1">
+                                        <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                    <h5 class="my-2 text-primary, darktext">Spidol Snowman</h5>
+                                                    <h4 class="text-success, harga">IDR 8,000</h4>
+                                                </div>
+                                                <div class="col-sm text-right">
+                                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/spidol.jpg?raw=true" method="GET" width="84" height="84">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </li>
+    
+                                <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="beras2">
+                                    <div class="gambar1">
+                                        <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                    <h5 class="my-2 text-primary, darktext">Beras</h5>
+                                                    <h4 class="text-success, harga">IDR 19,999</h4>
+                                                </div>
+                                                <div class="col-sm text-right">
+                                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/beras.jpg?raw=true" method="GET" width="84" height="84">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </li>
+    
+                                <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="airpods2">
+                                    <div class="gambar1">
+                                        <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                    <h5 class="my-2 text-primary, darktext">Airpods</h5>
+                                                    <h4 class="text-success, harga">IDR 750,999</h4>
+                                                </div>
+                                                <div class="col-sm text-right">
+                                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/airpods.jpg?raw=true" method="GET" width="84" height="84">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </li>
+    
+                                <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="potabi2">
+                                    <div class="gambar1">
+                                        <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                    <h5 class="my-2 text-primary, darktext">Potabi</h5>
+                                                    <h4 class="text-success, harga">IDR 8,500</h4>
+                                                </div>
+                                                <div class="col-sm text-right">
+                                                    <img src="https://assets.klikindomaret.com/share/20080040/20080040_1.jpg" width="84" height="84">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </li>
+    
+                                <li class="items , list-unstyled">
+                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="japota2">
+                                    <div class="gambar1">
+                                        <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                    <h5 class="my-2 text-primary, darktext">Japoouta</h5>
+                                                    <h4 class="text-success, harga">IDR 10,000</h4>
+                                                </div>
+                                                <div class="col-sm text-right">
+                                                    <img src="https://github.com/Andri-F/perkembangan/blob/master/japoota.jpg?raw=true" width="84" height="84">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    </a>  
+                                </li>
+                            </div>
+                        </div>
 
-                                <div class="row mb-4">
-
+                        <div class="popular">
+                            <div class="container">
+                                <ol id="list" class="list-unstyled" style="margin : 0%;">
+                                    <h2 class="mt-3, items, list-unstyled">POPULAR</h2>
+                                    <hr>
+        
                                     <li class="items , list-unstyled">
                                         <a href="#" class="list-unstyled" style="text-decoration: none;" id="baju">
-                                            <div class="gambar" style=" width: 360px;">
+                                            <div class="gambar">
                                                 <div class="col-sm mx-0 px-5 py-3 border rounded">
                                                     <div class="row">
                                                         <div class="col-sm">
@@ -649,15 +1283,15 @@
                                             </div>
                                         </a>
                                     </li>
-
-
+        
+        
                                     <li class="items , list-unstyled">
                                         <a href="#" class="list-unstyled" style="text-decoration: none;" id="keti">
-                                            <div class="gambar" style="width: 360px;">
+                                            <div class="gambar">
                                                 <div class="col-sm mx-0 px-5 py-3 border rounded">
                                                     <div class="row">
                                                         <div class="col-sm">
-                                                            <h5 class="my-2 text-primary, darktext">Tiket<br>KETI SHOW</h5>
+                                                            <h5 class="my-2 text-primary, darktext">Tiket KETI SHOW</h5>
                                                             <h4 class="text-success, harga" style="font-size: 18px;">IDR 1,000,000</h4>
                                                         </div>
                                                         <div class="col-sm text-right">
@@ -668,14 +1302,14 @@
                                             </div>
                                         </a>
                                     </li>
-
+        
                                     <li class="items , list-unstyled">
                                         <a href="#" class="list-unstyled" style="text-decoration: none;" id="mobil">
-                                            <div class="gambar" style=" min-width: 360px;">
+                                            <div class="gambar">
                                                 <div class="col-sm mx-0 px-5 py-3 border rounded">
                                                     <div class="row">
                                                         <div class="col-sm">
-                                                            <h5 class="my-2 text-primary, darktext">Mobil <br>Mobilan</h5>
+                                                            <h5 class="my-2 text-primary, darktext">Mobil Mobilan</h5>
                                                             <h4 class="text-success, harga" style="font-size: 18px;">IDR 35,500</h4>
                                                         </div>
                                                         <div class="col-sm text-right">
@@ -684,608 +1318,529 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                </div>
-
-                                </a>
-                                </li>
-                                <hr>
-
-                                <h2 class="mt-3, items, list-unstyled">PRODUCT</h2>
-
-
-                                <li class="items , list-unstyled">
-                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="momogi">
-                                    <div class="gambar1">
-                                        <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                            <div class="row">
-                                                <div class="col-sm">
-                                                    <h5 class="my-2 text-primary, darktext">Momogi</h5>
-                                                    <h4 class="text-success, harga">IDR 20,000</h4>
-                                                </div>
-                                                <div class="col-sm text-right">
-                                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/momogi.jpg?raw=true" method="GET" width="84" height="84">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </li>
-
-                                <li class="items , list-unstyled">
-                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="sunsilk">
-                                    <div class="gambar1">
-                                        <div class="col-sm mx-0.9 px-5 py-3 border rounded">
-                                            <div class="row">
-                                                <div class="col-sm">
-                                                    <h5 class="my-2 text-primary, darktext">Sunsilk</h5>
-                                                    <h4 class="text-success, harga">IDR 25,999</h4>
-                                                </div>
-                                                <div class="col-sm text-right">
-                                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/sunsilk.jpg?raw=true" width="84" height="84">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="items , list-unstyled">
-                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="pensilmurah">
-                                    <div class="gambar1">
-                                        <div class="col-sm mx-0.9 px-5 py-3 border rounded">
-                                            <div class="row">
-                                                <div class="col-sm">
-                                                    <h5 class="my-2 text-primary, darktext">Pensil Murah</h5>
-                                                    <h4 class="text-success, harga">IDR 1,000</h4>
-                                                </div>
-                                                <div class="col-sm text-right">
-                                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/pensil.jpg?raw=true" width="84" height="84">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="items , list-unstyled">
-                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="samsung">
-                                    <div class="gambar1">
-                                        <div class="col-sm mx-0.9 px-5 py-3 border rounded">
-                                            <div class="row">
-                                                <div class="col-sm">
-                                                    <h5 class="my-2 text-primary, darktext">Samsung</h5>
-                                                    <h4 class="text-success, harga">IDR 2,500,000</h4>
-                                                </div>
-                                                <div class="col-sm text-right">
-                                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/samsung.jpg?raw=true" method="GET" width="84" height="84">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                </li>
-                                <li class="items , list-unstyled">
-                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="roti">
-                                    <div class="gambar1">
-                                        <div class="col-sm mx-0.9 px-5 py-3 border rounded">
-                                            <div class="row">
-                                                <div class="col-sm">
-                                                    <h5 class="my-2 text-primary, darktext">Sari Roti</h5>
-                                                    <h4 class="text-success, harga">IDR 13,000</h4>
-                                                </div>
-                                                <div class="col-sm text-right">
-                                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/sariroti.jpg?raw=true" width="84" height="84">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="items , list-unstyled">
-                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="maechee">
-                                    <div class="gambar1">
-                                        <div class="col-sm mx-0.9 px-5 py-3 border rounded">
-                                            <div class="row">
-                                                <div class="col-sm">
-                                                    <h5 class="my-2 text-primary, darktext">Maechee</h5>
-                                                    <h4 class="text-success, harga">IDR 6,999</h4>
-                                                </div>
-                                                <div class="col-sm text-right">
-                                                    <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/maichi.jpg?raw=true" width="84" height="84">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </li>
-
-
-                                <h2 class="mt-3, items, list-unstyled">RECOMMENDED</h2>
-                                <hr>
-                                <div class="row mb-4">
+                                        </a>
+                                    </li>
+                                    <hr>
+                            </div>
+                        </div>
+                        <div class='recom'>
+                            <div class="container">
+                                <ol id="list" class="list-unstyled" style="margin : 0%;">
+                                    <h2 class="mt-3, items, list-unstyled">RECOMMENDED</h2>
+                                    <hr>
+        
+        
                                     <li class="items , list-unstyled">
                                         <a href="#" class="list-unstyled" style="text-decoration: none;" id="masker">
-                                            <div class="gambar" style=" width: 360px;">
-                                                <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                                    <div class="row">
-                                                        <div class="col-sm">
-                                                            <h5 class="my-2 text-primary, darktext">Masker Hitam</h5>
-                                                            <h4 class="text-success, harga" style="font-size: 18px;">IDR 3,999</h4>
-                                                        </div>
-                                                        <div class="col-sm text-right">
-                                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/masker.jpg?raw=true" method="GET" width="84" height="84">
-                                                        </div>
+                                        <div class="gambar1">
+                                            <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                <div class="row">
+                                                    <div class="col-sm">
+                                                        <h5 class="my-2 text-primary, darktext">Masker Hitam</h5>
+                                                        <h4 class="text-success, harga">IDR 3,999</h4>
+                                                    </div>
+                                                    <div class="col-sm text-right">
+                                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/masker.jpg?raw=true" method="GET" width="84" height="84">
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
                                         </a>
                                     </li>
-
+        
                                     <li class="items , list-unstyled">
                                         <a href="#" class="list-unstyled" style="text-decoration: none;" id="jeans">
+                                        <div class="gambar1">
+                                            <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                <div class="row">
+                                                    <div class="col-sm">
+                                                        <h5 class="my-2 text-primary, darktext">Jeans sobek</h5>
+                                                        <h4 class="text-success, harga">IDR 88,000</h4>
+                                                    </div>
+                                                    <div class="col-sm text-right">
+                                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/jeans.jpg?raw=true" method="GET" width="84" height="84">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </li>
+        
+                                    <li class="items , list-unstyled">
+                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="ig">
+                                        <div class="gambar1">
+                                            <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                <div class="row">
+                                                    <div class="col-sm">
+                                                        <h5 class="my-2 text-primary, darktext">Like IG</h5>
+                                                        <h4 class="text-success, harga">IDR 3,000</h4>
+                                                    </div>
+                                                    <div class="col-sm text-right">
+                                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/jual.jpg?raw=true" method="GET" width="84" height="84">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </li>
+        
+                                    <li class="items , list-unstyled">
+                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="kotak">
+                                        <div class="gambar1">
+                                            <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                <div class="row">
+                                                    <div class="col-sm">
+                                                        <h5 class="my-2 text-primary, darktext">Kotak Bekal</h5>
+                                                        <h4 class="text-success, harga">IDR 10,000</h4>
+                                                    </div>
+                                                    <div class="col-sm text-right">
+                                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/kotak.jpg?raw=true" method="GET" width="84" height="84">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </li>
+        
+                                    <li class="items , list-unstyled">
+                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="spidol">
+                                        <div class="gambar1">
+                                            <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                <div class="row">
+                                                    <div class="col-sm">
+                                                        <h5 class="my-2 text-primary, darktext">Spidol Snowman</h5>
+                                                        <h4 class="text-success, harga">IDR 8,000</h4>
+                                                    </div>
+                                                    <div class="col-sm text-right">
+                                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/spidol.jpg?raw=true" method="GET" width="84" height="84">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </li>
+        
+                                    <li class="items , list-unstyled">
+                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="beras">
+                                        <div class="gambar1">
+                                            <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                <div class="row">
+                                                    <div class="col-sm">
+                                                        <h5 class="my-2 text-primary, darktext">Beras</h5>
+                                                        <h4 class="text-success, harga">IDR 19,999</h4>
+                                                    </div>
+                                                    <div class="col-sm text-right">
+                                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/beras.jpg?raw=true" method="GET" width="84" height="84">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </li>
+        
+                                    <li class="items , list-unstyled">
+                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="airpods">
+                                        <div class="gambar1">
+                                            <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                <div class="row">
+                                                    <div class="col-sm">
+                                                        <h5 class="my-2 text-primary, darktext">Airpods</h5>
+                                                        <h4 class="text-success, harga">IDR 750,999</h4>
+                                                    </div>
+                                                    <div class="col-sm text-right">
+                                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/airpods.jpg?raw=true" method="GET" width="84" height="84">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </li>
+        
+                                    <li class="items , list-unstyled">
+                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="potabi">
+                                        <div class="gambar1">
+                                            <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                <div class="row">
+                                                    <div class="col-sm">
+                                                        <h5 class="my-2 text-primary, darktext">Potabi</h5>
+                                                        <h4 class="text-success, harga">IDR 8,500</h4>
+                                                    </div>
+                                                    <div class="col-sm text-right">
+                                                        <img src="https://assets.klikindomaret.com/share/20080040/20080040_1.jpg" width="84" height="84">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </li>
+        
+                                    <li class="items , list-unstyled">
+                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="japota">
+                                        <div class="gambar1">
+                                            <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                <div class="row">
+                                                    <div class="col-sm">
+                                                        <h5 class="my-2 text-primary, darktext">Japoouta</h5>
+                                                        <h4 class="text-success, harga">IDR 10,000</h4>
+                                                    </div>
+                                                    <div class="col-sm text-right">
+                                                        <img src="https://github.com/Andri-F/perkembangan/blob/master/japoota.jpg?raw=true" width="84" height="84">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        </a>
+                                    </li>  
+                                </div>
+                        </div>
+                        <div class="product">
+                            <div class="container">
+                                <ol id="list" class="list-unstyled" style="margin : 0%;">
+                                    <h2 class="mt-3, items, list-unstyled">ALL PRODUCTS</h2>
+                                    <hr>
+                                    <div class="row mb-4">
+        
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="momogi">
                                             <div class="gambar" style="width: 360px;">
                                                 <div class="col-sm mx-0 px-5 py-3 border rounded">
                                                     <div class="row">
                                                         <div class="col-sm">
-                                                            <h5 class="my-2 text-primary, darktext">Jeans sobek</h5>
-                                                            <h4 class="text-success, harga" style="font-size: 18px;">IDR 88,000</h4>
+                                                            <h5 class="my-2 text-primary, darktext">Momogi</h5>
+                                                            <h4 class="text-success, harga" style="font-size: 18px;">IDR 20,000</h4>
                                                         </div>
                                                         <div class="col-sm text-right">
-                                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/jeans.jpg?raw=true" width="84" height="84">
+                                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/momogi.jpg?raw=true" method="GET" width="84" height="84">
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
-                                    </li>
-
-                                    <li class="items , list-unstyled">
-                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="ig">
+                                            </a>
+                                        </li>
+        
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="sunsilk">
+                                            <div class="gambar" style="width: 360px;">
+                                                <div class="col-sm mx-0.9 px-5 py-3 border rounded">
+                                                    <div class="row">
+                                                        <div class="col-sm">
+                                                            <h5 class="my-2 text-primary, darktext">Sunsilk</h5>
+                                                            <h4 class="text-success, harga" style="font-size: 18px;">IDR 25,999</h4>
+                                                        </div>
+                                                        <div class="col-sm text-right">
+                                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/sunsilk.jpg?raw=true" width="84" height="84">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </li>
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="pensilmurah">
+                                            <div class="gambar" style="width: 360px;">
+                                                <div class="col-sm mx-0.9 px-5 py-3 border rounded">
+                                                    <div class="row">
+                                                        <div class="col-sm">
+                                                            <h5 class="my-2 text-primary, darktext">Pensil Murah</h5>
+                                                            <h4 class="text-success, harga" style="font-size: 18px;">IDR 1,000</h4>
+                                                        </div>
+                                                        <div class="col-sm text-right">
+                                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/pensil.jpg?raw=true" width="84" height="84">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </li>
+                                    </div>
+        
+                                    <div class="row mb-4">
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="samsung">
+                                            <div class="gambar" style="width: 360px;">
+                                                <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                    <div class="row">
+                                                        <div class="col-sm">
+                                                            <h5 class="my-2 text-primary, darktext">Samsung</h5>
+                                                            <h4 class="text-success, harga" style="font-size: 17px;">IDR 2,500,000</h4>
+                                                        </div>
+                                                        <div class="col-sm text-right">
+                                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/samsung.jpg?raw=true" method="GET" width="84" height="84">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </li>
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="roti">
+                                            <div class="gambar" style="width: 360px;">
+                                                <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                    <div class="row">
+                                                        <div class="col-sm">
+                                                            <h5 class="my-2 text-primary, darktext">Sari Roti</h5>
+                                                            <h4 class="text-success, harga" style="font-size: 18px;">IDR 13,000</h4>
+                                                        </div>
+                                                        <div class="col-sm text-right">
+                                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/sariroti.jpg?raw=true" width="84" height="84">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </li>
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="maechee">
+                                                <div class="gambar" style="width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Maechee</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 6,999</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/maichi.jpg?raw=true" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </div>
+        
+                                    <div class="row mb-4">
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="masker">
+                                                <div class="gambar" style=" width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Masker Hitam</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 3,999</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/masker.jpg?raw=true" method="GET" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+        
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="jeans">
+                                                <div class="gambar" style="width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Jeans sobek</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 88,000</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/jeans.jpg?raw=true" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+        
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="ig">
+                                                <div class="gambar" style=" width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Like IG</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 3,000</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/jual.jpg?raw=true" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </div>
+        
+        
+                                    <div class="row mb-4">
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="kotak">
+                                                <div class="gambar" style=" width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Kotak Bekal</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 10,000</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/kotak.jpg?raw=true" method="GET" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+        
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="spidol">
+                                                <div class="gambar" style=" width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Spidol Snowman</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 8,000</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/spidol.jpg?raw=true" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+        
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="beras">
+                                                <div class="gambar" style=" width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Beras</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 19,999</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/beras.jpg?raw=true" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </div>
+        
+        
+                                    <div class="row mb-4">
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="airpods">
+                                                <div class="gambar" style=" width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Airpods</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 750,999</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/airpods.jpg?raw=true" method="GET" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+        
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="potabi">
+                                                <div class="gambar" style=" width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Potabi</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 8,500</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://assets.klikindomaret.com/share/20080040/20080040_1.jpg" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+        
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="japota">
+                                                <div class="gambar" style=" width: 360px;">
+                                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                        <div class="row">
+                                                            <div class="col-sm">
+                                                                <h5 class="my-2 text-primary, darktext">Japoouta</h5>
+                                                                <h4 class="text-success, harga" style="font-size: 18px;">IDR 10,000</h4>
+                                                            </div>
+                                                            <div class="col-sm text-right">
+                                                                <img src="https://github.com/Andri-F/perkembangan/blob/master/japoota.jpg?raw=true" width="84" height="84">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="baju">
                                             <div class="gambar" style=" width: 360px;">
                                                 <div class="col-sm mx-0 px-5 py-3 border rounded">
                                                     <div class="row">
                                                         <div class="col-sm">
-                                                            <h5 class="my-2 text-primary, darktext">Like IG</h5>
-                                                            <h4 class="text-success, harga" style="font-size: 18px;">IDR 3,000</h4>
+                                                            <h5 class="my-2 text-primary, darktext">Baju Polos Putih</h5>
+                                                            <h4 class="text-success, harga" style="font-size: 18px;">IDR 80,999</h4>
                                                         </div>
                                                         <div class="col-sm text-right">
-                                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/jual.jpg?raw=true" width="84" height="84">
+                                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/baju.jpg?raw=true" method="GET" width="84" height="84">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </li>
+        
+                                        <li class="items , list-unstyled">
+                                            
+                                            <div class="gambar" style=" width: 360px;">
+                                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="keti">
+                                                <div class="col-sm mx-0 px-5 py-3 border rounded">
+                                                    <div class="row">
+                                                        <div class="col-sm">
+                                                            <h5 class="my-2 text-primary, darktext">Tiket <br>KETI SHOW</h5>
+                                                            <h4 class="text-success, harga" style="font-size: 18px;">IDR 1,000,000</h4>
+                                                        </div>
+                                                        <div class="col-sm text-right">
+                                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/keti.png?raw=true" method="GET" width="84" height="84">
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </a>
-                                    </li>
-                                </div>
-
-
-                                <div class="row mb-4">
-                                    <li class="items , list-unstyled">
-                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="kotak">
+                                        </li>
+        
+                                        <li class="items , list-unstyled">
+                                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="mobil">
                                             <div class="gambar" style=" width: 360px;">
                                                 <div class="col-sm mx-0 px-5 py-3 border rounded">
                                                     <div class="row">
                                                         <div class="col-sm">
-                                                            <h5 class="my-2 text-primary, darktext">Kotak Bekal</h5>
-                                                            <h4 class="text-success, harga" style="font-size: 18px;">IDR 10,000</h4>
+                                                            <h5 class="my-2 text-primary, darktext">Mobil<br>Mobilan</h5>
+                                                            <h4 class="text-success, harga" style="font-size: 18px;">IDR 35,500</h4>
                                                         </div>
                                                         <div class="col-sm text-right">
-                                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/kotak.jpg?raw=true" method="GET" width="84" height="84">
+                                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/toys.jpg?raw=true" method="GET" width="84" height="84">
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
-                                    </li>
-
-                                    <li class="items , list-unstyled">
-                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="spidol">
-                                            <div class="gambar" style=" width: 360px;">
-                                                <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                                    <div class="row">
-                                                        <div class="col-sm">
-                                                            <h5 class="my-2 text-primary, darktext">Spidol Snowman</h5>
-                                                            <h4 class="text-success, harga" style="font-size: 18px;">IDR 8,000</h4>
-                                                        </div>
-                                                        <div class="col-sm text-right">
-                                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/spidol.jpg?raw=true" width="84" height="84">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li class="items , list-unstyled">
-                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="beras">
-                                            <div class="gambar" style=" width: 360px;">
-                                                <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                                    <div class="row">
-                                                        <div class="col-sm">
-                                                            <h5 class="my-2 text-primary, darktext">Beras</h5>
-                                                            <h4 class="text-success, harga" style="font-size: 18px;">IDR 19,999</h4>
-                                                        </div>
-                                                        <div class="col-sm text-right">
-                                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/beras.jpg?raw=true" width="84" height="84">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </div>
-
-
-                                <div class="row mb-4">
-                                    <li class="items , list-unstyled">
-                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="airpods">
-                                            <div class="gambar" style=" width: 360px;">
-                                                <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                                    <div class="row">
-                                                        <div class="col-sm">
-                                                            <h5 class="my-2 text-primary, darktext">Airpods</h5>
-                                                            <h4 class="text-success, harga" style="font-size: 18px;">IDR 750,999</h4>
-                                                        </div>
-                                                        <div class="col-sm text-right">
-                                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/airpods.jpg?raw=true" method="GET" width="84" height="84">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li class="items , list-unstyled">
-                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="potabi">
-                                            <div class="gambar" style=" width: 360px;">
-                                                <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                                    <div class="row">
-                                                        <div class="col-sm">
-                                                            <h5 class="my-2 text-primary, darktext">Potabi</h5>
-                                                            <h4 class="text-success, harga" style="font-size: 18px;">IDR 8,500</h4>
-                                                        </div>
-                                                        <div class="col-sm text-right">
-                                                            <img src="https://assets.klikindomaret.com/share/20080040/20080040_1.jpg" width="84" height="84">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li class="items , list-unstyled">
-                                        <a href="#" class="list-unstyled" style="text-decoration: none;" id="japota">
-                                            <div class="gambar" style=" width: 360px;">
-                                                <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                                    <div class="row">
-                                                        <div class="col-sm">
-                                                            <h5 class="my-2 text-primary, darktext">Japoouta</h5>
-                                                            <h4 class="text-success, harga" style="font-size: 18px;">IDR 10,000</h4>
-                                                        </div>
-                                                        <div class="col-sm text-right">
-                                                            <img src="https://github.com/Andri-F/perkembangan/blob/master/japoota.jpg?raw=true" width="84" height="84">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </div>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <hr>
+                                </ol>
+                            </div>
                         </div>
 
-                        <hr>
-                        <div class="mySlides fade">
-                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="bajuslide">
-                                <div class="col-sm mx-6 px-6 py-5">
-                                    <div class="row">
-                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/baju.jpg?raw=true" method="GET" width="19%" height="19%" style="margin-left: 10%; margin-right: 0%;">
-                                        <div class="col-sm" style="text-align: center; margin: 0%; padding: 0%; width: 50%; float: right;">
-                                            <h2 class="my-2 text-primary" style="font-size: 3vw; margin: 0%; padding: 0%; font-size: min(3vw, 45px);">Baju Polos Putih</h2>
-                                            <p class="text-success" style="font-size: 2vw; margin: 0%; padding: 0%; font-size: min(2vw, 20px);">Baju Polos Putih <br>Size: XS, S, M, L, XL
-                                                <br>100% Cotton Combed <br> - Bahan adem <br> - Menyerap keringat <br> - Serat halus</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="mySlides fade">
-                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="samsungslide">
-                                <div class="col-sm mx-6 px-6 py-5">
-                                    <div class="row">
-                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/samsung.jpg?raw=true" method="GET" width="19%" height="19%" style="margin-left: 10%; margin-right: 0%;">
-                                        <div class="col-sm" style="text-align: center; margin: 0%; padding: 0%; width: 50%; float: right;">
-                                            <h2 class="my-2 text-primary" style="font-size: 3vw; margin: 0%; padding: 0%; font-size: min(3vw, 45px);">Samsung</h2>
-                                            <p class="text-success" style="font-size: 2vw; margin: 0%; padding: 0%; font-size: min(2vw, 20px);">Samsung A51 <br>Specifications:
-                                                <br> - Kamera utama wide 48 MP<br> - Kamera ultrawide 12 MP <br> - Kamera makro 5 MP <br> - Kamera depth sensor 5 MP <br> - RAM 6 GB dan memori internal 128 GB</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="mySlides fade">
-                            <a href="#" class="list-unstyled" style="text-decoration: none;" id="airpodsslide">
-                                <div class="col-sm mx-6 px-6 py-5">
-                                    <div class="row">
-                                        <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/airpods.jpg?raw=true" method="GET" width="19%" height="19%" style="margin-left: 10%; margin-right: 0%;">
-                                        <div class="col-sm" style="text-align: center; margin: 0%; padding: 0%; width: 50%; float: right;">
-                                            <h2 class="my-2 text-primary" style="font-size: 3vw; margin: 0%; padding: 0%; font-size: min(3vw, 45px);">Airpods</h2>
-                                            <p class="text-success" style="font-size: 2vw; margin: 0%; padding: 0%; font-size: min(2vw, 20px);">Original Apple Airpods <br>Specifications:
-                                                <br> - Bluetooth/Wireless<br> - Waterproof <br> - Built in Microphone <br> - 24 Hours Battery Supply</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div style="text-align:center">
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </div>
-
-                        <script>
-                            var slideIndex = 0;
-                            showSlides();
-
-                            function showSlides() {
-                                var i;
-                                var slides = document.getElementsByClassName("mySlides");
-                                var dots = document.getElementsByClassName("dot");
-                                for (i = 0; i < slides.length; i++) {
-                                    slides[i].style.display = "none";
-                                }
-                                slideIndex++;
-                                if (slideIndex > slides.length) {
-                                    slideIndex = 1
-                                }
-                                for (i = 0; i < dots.length; i++) {
-                                    dots[i].className = dots[i].className.replace(" active", "");
-                                }
-                                slides[slideIndex - 1].style.display = "block";
-                                dots[slideIndex - 1].className += " active";
-                                setTimeout(showSlides, 3200); // Change image every 2 seconds
-                            }
-                        </script>
-
-                        <hr>
-                        <div class="container">
-
-                            <li class="items , list-unstyled">
-                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="baju2">
-                                <div class="gambar1">
-                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                        <div class="row">
-                                            <div class="col-sm">
-                                                <h5 class="my-2 text-primary, darktext">Baju Polos Putih</h5>
-                                                <h4 class="text-success, harga">IDR 80,999</h4>
-                                            </div>
-                                            <div class="col-sm text-right">
-                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/baju.jpg?raw=true" method="GET" width="84" height="84">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            </li>
-
-                            <li class="items , list-unstyled">
-                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="keti2">
-                                <div class="gambar1">
-                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                        <div class="row">
-                                            <div class="col-sm">
-                                                <h5 class="my-2 text-primary, darktext">Tiket KETI SHOW</h5>
-                                                <h4 class="text-success, harga">IDR 1,000,000</h4>
-                                            </div>
-                                            <div class="col-sm text-right">
-                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/keti.png?raw=true" method="GET" width="84" height="84">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </li>
-
-                            <li class="items , list-unstyled">
-                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="mobil2">
-                                <div class="gambar1">
-                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                        <div class="row">
-                                            <div class="col-sm">
-                                                <h5 class="my-2 text-primary, darktext">Mobil Mobilan</h5>
-                                                <h4 class="text-success, harga">IDR 35,500</h4>
-                                            </div>
-                                            <div class="col-sm text-right">
-                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/toys.jpg?raw=true" method="GET" width="84" height="84">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </li>
-
-                            <li class="items , list-unstyled">
-                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="masker2">
-                                <div class="gambar1">
-                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                        <div class="row">
-                                            <div class="col-sm">
-                                                <h5 class="my-2 text-primary, darktext">Masker Hitam</h5>
-                                                <h4 class="text-success, harga">IDR 3,999</h4>
-                                            </div>
-                                            <div class="col-sm text-right">
-                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/masker.jpg?raw=true" method="GET" width="84" height="84">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </li>
-
-                            <li class="items , list-unstyled">
-                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="jeans2">
-                                <div class="gambar1">
-                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                        <div class="row">
-                                            <div class="col-sm">
-                                                <h5 class="my-2 text-primary, darktext">Jeans sobek</h5>
-                                                <h4 class="text-success, harga">IDR 88,000</h4>
-                                            </div>
-                                            <div class="col-sm text-right">
-                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/jeans.jpg?raw=true" method="GET" width="84" height="84">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </li>
-
-                            <li class="items , list-unstyled">
-                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="ig2">
-                                <div class="gambar1">
-                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                        <div class="row">
-                                            <div class="col-sm">
-                                                <h5 class="my-2 text-primary, darktext">Like IG</h5>
-                                                <h4 class="text-success, harga">IDR 3,000</h4>
-                                            </div>
-                                            <div class="col-sm text-right">
-                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/jual.jpg?raw=true" method="GET" width="84" height="84">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </li>
-
-                            <li class="items , list-unstyled">
-                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="kotak2">
-                                <div class="gambar1">
-                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                        <div class="row">
-                                            <div class="col-sm">
-                                                <h5 class="my-2 text-primary, darktext">Kotak Bekal</h5>
-                                                <h4 class="text-success, harga">IDR 10,000</h4>
-                                            </div>
-                                            <div class="col-sm text-right">
-                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/kotak.jpg?raw=true" method="GET" width="84" height="84">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </li>
-
-                            <li class="items , list-unstyled">
-                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="spidol2">
-                                <div class="gambar1">
-                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                        <div class="row">
-                                            <div class="col-sm">
-                                                <h5 class="my-2 text-primary, darktext">Spidol Snowman</h5>
-                                                <h4 class="text-success, harga">IDR 8,000</h4>
-                                            </div>
-                                            <div class="col-sm text-right">
-                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/spidol.jpg?raw=true" method="GET" width="84" height="84">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </li>
-
-                            <li class="items , list-unstyled">
-                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="beras2">
-                                <div class="gambar1">
-                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                        <div class="row">
-                                            <div class="col-sm">
-                                                <h5 class="my-2 text-primary, darktext">Beras</h5>
-                                                <h4 class="text-success, harga">IDR 19,999</h4>
-                                            </div>
-                                            <div class="col-sm text-right">
-                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/beras.jpg?raw=true" method="GET" width="84" height="84">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </li>
-
-                            <li class="items , list-unstyled">
-                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="airpods2">
-                                <div class="gambar1">
-                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                        <div class="row">
-                                            <div class="col-sm">
-                                                <h5 class="my-2 text-primary, darktext">Airpods</h5>
-                                                <h4 class="text-success, harga">IDR 750,999</h4>
-                                            </div>
-                                            <div class="col-sm text-right">
-                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/airpods.jpg?raw=true" method="GET" width="84" height="84">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </li>
-
-                            <li class="items , list-unstyled">
-                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="potabi2">
-                                <div class="gambar1">
-                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                        <div class="row">
-                                            <div class="col-sm">
-                                                <h5 class="my-2 text-primary, darktext">Potabi</h5>
-                                                <h4 class="text-success, harga">IDR 8,500</h4>
-                                            </div>
-                                            <div class="col-sm text-right">
-                                                <img src="https://assets.klikindomaret.com/share/20080040/20080040_1.jpg" width="84" height="84">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </li>
-
-                            <li class="items , list-unstyled">
-                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="japota2">
-                                <div class="gambar1">
-                                    <div class="col-sm mx-0 px-5 py-3 border rounded">
-                                        <div class="row">
-                                            <div class="col-sm">
-                                                <h5 class="my-2 text-primary, darktext">Japoouta</h5>
-                                                <h4 class="text-success, harga">IDR 10,000</h4>
-                                            </div>
-                                            <div class="col-sm text-right">
-                                                <img src="https://github.com/Andri-F/perkembangan/blob/master/japoota.jpg?raw=true" width="84" height="84">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>   
-                                </div>
-                                </a>
-                            </li>
                         <br>
                         <br>
-
                         </ol>
-                        <script src="../Javascript/items.js"></script>
-                        <script src="../Javascript/search.js"></script>
-                        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-                        <script>
-                            window.jQuery || document.write('<script src="../javascript/vendor/jquery-1.9.1.min.js"><\/script>')
-                        </script>
-                        <script>
-                            $(document).ready(function() {
-
-                                setTimeout(function() {
-                                    $('body').addClass('loaded');
-                                    $('h1').css('color', '#222222');
-                                }, 3000);
-                            });
-                        </script>
-
                         <footer>
                             <section class="boxes">
                                 <div class="container">
@@ -1320,13 +1875,13 @@
                                             <a href="#" style="text-decoration: none;">
                                                 <li> Category</li>
                                             </a>
-                                            <a href="Recomended.html" style="text-decoration: none;">
+                                            <a href="#" id="frecom" style="text-decoration: none;">
                                                 <li> Recommended</li>
                                             </a>
-                                            <a href="popular.html" style="text-decoration: none;">
+                                            <a href="#" id="fpop" style="text-decoration: none;">
                                                 <li> Popular</li>
                                             </a>
-                                            <a href="product.html" style="text-decoration: none;">
+                                            <a href="#" id="fproduct" style="text-decoration: none;">
                                                 <li> All Products</li>
                                             </a>
                                         </ul>
@@ -1379,9 +1934,94 @@
                             }
                         });
                     </script>
+                    <script src="../Javascript/items.js"></script>
+                    <script src="../Javascript/search.js"></script>
+                    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                    <script>
+                        window.jQuery || document.write('<script src="../javascript/vendor/jquery-1.9.1.min.js"><\/script>')
+                    </script>
+                    <script>
+                        $(document).ready(function() {
 
-                    
+                            setTimeout(function() {
+                                $('body').addClass('loaded');
+                                $('h1').css('color', '#222222');
+                            }, 3000);
+                        });
+                    </script>
+                    <script>
+                        var slideIndex = 0;
+                        showSlides();
 
+                        function showSlides() {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("dot");
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) {
+                                slideIndex = 1
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                            setTimeout(showSlides, 3200); // Change image every 2 seconds
+                        }
+                    </script>
+                    <script>
+                        document.getElementById('main').addEventListener('click', function(){
+                        document.querySelector('.main').style.display = 'block';
+                        document.querySelector('.popular').style.display = 'none';
+                        document.querySelector('.recom').style.display = 'none';
+                        document.querySelector('.product').style.display = 'none';
+                        });
+
+                        document.getElementById('pop').addEventListener('click', function(){
+                        document.querySelector('.popular').style.display = 'block';
+                        document.querySelector('.main').style.display = 'none';
+                        document.querySelector('.recom').style.display = 'none';
+                        document.querySelector('.product').style.display = 'none';
+                        });
+
+                        document.getElementById('recom').addEventListener('click', function(){
+                        document.querySelector('.recom').style.display = 'block';
+                        document.querySelector('.main').style.display = 'none';
+                        document.querySelector('.popular').style.display = 'none';
+                        document.querySelector('.product').style.display = 'none';
+                        });
+
+                        document.getElementById('product').addEventListener('click', function(){
+                        document.querySelector('.product').style.display = 'block';
+                        document.querySelector('.main').style.display = 'none';
+                        document.querySelector('.popular').style.display = 'none';
+                        document.querySelector('.recom').style.display = 'none';
+                        });
+
+                        document.getElementById('fpop').addEventListener('click', function(){
+                        document.querySelector('.popular').style.display = 'block';
+                        document.querySelector('.main').style.display = 'none';
+                        document.querySelector('.recom').style.display = 'none';
+                        document.querySelector('.product').style.display = 'none';
+                        });
+
+                        document.getElementById('frecom').addEventListener('click', function(){
+                        document.querySelector('.recom').style.display = 'block';
+                        document.querySelector('.main').style.display = 'none';
+                        document.querySelector('.popular').style.display = 'none';
+                        document.querySelector('.product').style.display = 'none';
+                        });
+
+                        document.getElementById('fproduct').addEventListener('click', function(){
+                        document.querySelector('.product').style.display = 'block';
+                        document.querySelector('.main').style.display = 'none';
+                        document.querySelector('.popular').style.display = 'none';
+                        document.querySelector('.recom').style.display = 'none';
+                        });
+                    </script>
             </body>
             </div>
             

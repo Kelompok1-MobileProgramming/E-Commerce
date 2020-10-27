@@ -222,21 +222,6 @@ form.example::after {
     display: table;
 }
 
-.recom {
-    width: 100%;
-    height: auto;
-    background-color: coral;
-    margin: 0px;
-    padding: 20px;
-    padding-left: 300px;
-}
-
-.recomtext {
-    margin: 0 auto;
-    float: right;
-    margin-top: 18%;
-}
-
 .darktext {
     color: blue;
     font-size: min(5vw, 20px);
