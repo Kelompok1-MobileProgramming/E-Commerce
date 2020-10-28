@@ -8,7 +8,8 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
       <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
-    
+      
+
       <style>
         body {
           background-color:white;
@@ -58,7 +59,15 @@
 	      .isi-dropdown a:hover {
 		      color: #232323;
 		      background: #f3f3f3;
-	      }
+        }
+        
+        .table-hover tbody tr:hover{
+          color: black;
+        }
+
+        .dark .table-hover tbody tr:hover{
+          color: white;
+        }
       </style>
 
 <style>
@@ -113,12 +122,40 @@
     display: none;
     text-align: center;
   }
+
+  .dark {
+    background-color: rgb(65, 13, 56);
+    color: #e6e6e6;
+  }
+
+  .dar {
+    background-color: orange;
+  }
+
+  .dark .dar {
+    background-color: tomato;
+  }
+
+  .change {
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 40%;
+    width: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 8px;
+  }
+
+  .dark tr {
+    color: white;
+  }
+
+  .dark tr:hover {
+    color: rgb(233, 217, 217);
+  }
   </style>
 </head>
 <body onload="myFunction()">
-
-
-
 <script>
     var myVar;
     
@@ -136,7 +173,7 @@
     <div class="animate-bottom" style="display:none; text-decoration-line: lin;" id="myDiv">
 <body>
   
-    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+    <nav class="navbar navbar-expand-lg navbar-dark , dar">
       <a class="navbar-brand" href="#">
         <i data-feather="slack"></i>
         <a href="Main.html" style="text-decoration: none;">
@@ -213,6 +250,10 @@
                 </a>
               </li>
         </ul>  
+        <div class="mode" style="padding-top: 0.5%"> 
+          <div style="margin:1%; margin-bottom: 0%;">Dark mode:              
+              <span class="change">OFF</span> 
+          </div>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-lg btn-custom" type="submit">
@@ -274,7 +315,7 @@
           <div class="row mb-4">
             <h4 class="my-2">Customers</h4>
               <div class="table-wrapper-scroll-y my-custom-scrollbar">
-               <table class="table table-striped" data-toggle="table">
+               <table class="table" data-toggle="table">
                 <thead>
                   <th data-sortable="true">No</th>
                   <th data-sortable="false">Full Name</th>
@@ -336,9 +377,17 @@
               </div>
             </div>
           </div>
-        
-
-        
+          <script> 
+            $( ".change" ).on("click", function() { 
+                if( $( "body" ).hasClass( "dark" )) { 
+                    $( "body" ).removeClass( "dark" ); 
+                    $( ".change" ).text( "OFF" ); 
+                } else { 
+                    $( "body" ).addClass( "dark" ); 
+                    $( ".change" ).text( "ON" ); 
+                } 
+            }); 
+        </script>
 </body>
   
 <body>
@@ -510,8 +559,6 @@
           </div>
         </div>
       </div>
-
-      
 </body>
 </div>
 </body>
