@@ -675,7 +675,7 @@
                                             <div class="profile-block">
                                                 <div class="panel text-center">
                                                     <div class="user-heading">
-                                                        <a href="#"><img src="../img/cartoon.png" alt="" title=""></a>
+                                                        <a href="#"><img id="uploadPreview" style="width: 100px; height: 100px;" src="../img/cartoon.png" ></a>
                                                         <h1 id="username"></h1>
                                                         <p>Wallet Balance $0.00</p>
                                                     </div>
@@ -704,7 +704,7 @@
                                 <button class="dropbtn">MENU</button>
                                 <div class="dropdown-content">
                                     <a href="#" id="main" class="home" style="padding-top: 3%; color: white;">Home</a>
-                                    <a href="signin.html" class="home" style="padding-top: 3%; color: white;">Performance</a>
+                                    <a href="bootstrap.html" class="home" style="padding-top: 3%; color: white;">Performance</a>
                                     <div class="dropdown dropright">
                                         <button type="button" class="btn btn-primary dropdown-toggle, darkbtn" data-toggle="dropdown" 
                                         style="width: 200px; padding-top: 3%; outline: none; box-shadow: none; margin-right: 0%;">
@@ -2218,10 +2218,10 @@
 
                         <div class="EditProfileBolo">
                             <form action="next.html">
-                                 <img id="uploadPreview" style="width: 100px; height: 100px;" >
+                                 
                                      <input id="uploadImage" type="file" name="myPhoto" 
                                      onchange="PreviewImage();">
-                                     <input type="submit" id="btn" value="save">
+                                     
                             </form>
                         </div> 
 
@@ -3066,19 +3066,14 @@
                         document.querySelector('.discc').style.display = 'none';
                         document.querySelector('.edu').style.display = 'none';
                         document.querySelector('.ofcbolo').style.display = 'none';
-                        document.querySelector('.ofcbolol').style.display = 'none';
-                        document.querySelector('.pp').style.display = 'none';
-                        document.querySelector('.ftnc').style.display = 'none';
-                        document.querySelector('.EditProfileBolo').style.display = 'none';
                         document.querySelector('.Subscription').style.display = 'none';
+                        document.querySelector('.EditProfileBolo').style.display = 'none';
                         document.querySelector('.Transaction').style.display = 'none';
 
                         setTimeout(function() {
                             $('body').removeClass('loaded');
                             $('h1').css('color', '#222222');
                         }, 0000);
-
- 
 
                         setTimeout(function() {
                             $('body').addClass('loaded');
@@ -3102,11 +3097,8 @@
                         document.querySelector('.discc').style.display = 'none';
                         document.querySelector('.edu').style.display = 'none';
                         document.querySelector('.ofcbolo').style.display = 'none';
-                        document.querySelector('.ofcbolol').style.display = 'none';
-                        document.querySelector('.pp').style.display = 'none';
-                        document.querySelector('.ftnc').style.display = 'none';
-                        document.querySelector('.profile').style.display = 'none';
                         document.querySelector('.Subscription').style.display = 'none';
+                        document.querySelector('.profile').style.display = 'none';
                         document.querySelector('.Transaction').style.display = 'none';
 
                         setTimeout(function() {
@@ -3114,14 +3106,11 @@
                             $('h1').css('color', '#222222');
                         }, 0000);
 
- 
-
                         setTimeout(function() {
                             $('body').addClass('loaded');
                             $('h1').css('color', '#222222');
                         }, 1000);
                         });
-
 
 
                         document.getElementById('shb').addEventListener('click', function(){
@@ -3148,15 +3137,11 @@
                             $('h1').css('color', '#222222');
                         }, 0000);
 
- 
-
                         setTimeout(function() {
                             $('body').addClass('loaded');
                             $('h1').css('color', '#222222');
                         }, 1000);
                         });
-
-
 
                         document.getElementById('thb').addEventListener('click', function(){
                         document.querySelector('.Transaction').style.display = 'block';
@@ -3173,19 +3158,14 @@
                         document.querySelector('.discc').style.display = 'none';
                         document.querySelector('.edu').style.display = 'none';
                         document.querySelector('.ofcbolo').style.display = 'none';
-                        document.querySelector('.ofcbolol').style.display = 'none';
-                        document.querySelector('.pp').style.display = 'none';
-                        document.querySelector('.ftnc').style.display = 'none';
                         document.querySelector('.EditProfileBolo').style.display = 'none';
-                        document.querySelector('.Subscription').style.display = 'none';
                         document.querySelector('.profile').style.display = 'none';
+                        document.querySelector('.Subscription').style.display = 'none';
 
                         setTimeout(function() {
                             $('body').removeClass('loaded');
                             $('h1').css('color', '#222222');
                         }, 0000);
-
- 
 
                         setTimeout(function() {
                             $('body').addClass('loaded');
