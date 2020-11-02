@@ -3,6 +3,7 @@ function search_item() {
     input=input.toLowerCase(); 
     let x = document.getElementsByClassName('items'); 
     ol = document.getElementById('list');
+    let y = document.getElementsByClassName('noitems');
 
     /*if(input.value.length == 0){
         ul.style.display = "none";
@@ -21,13 +22,21 @@ function search_item() {
     }*/
 
     for (i = 0; i < x.length; i++) {  
+        document.querySelector('.product').style.display = 'flex';
         if (!x[i].innerHTML.toLowerCase().includes(input)) { 
             x[i].style.display="none"; 
         } 
-        else { 
+        else if (x[i].innerHTML.toLowerCase().includes(input)) { 
             x[i].style.display="list-item";                  
         } 
+        else{
+
+        }
+        
     } 
+    for(e = 0; e < y.length; e++){
+        y[e].style.display="none";
+    }
 }
 
 /*
