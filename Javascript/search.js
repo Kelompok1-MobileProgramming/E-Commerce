@@ -6,7 +6,7 @@ function search_item() {
     let y = document.getElementsByClassName('noitems');
 
     if(input){
-        document.querySelector('.product').style.display = 'flex';
+        document.querySelector('.product').style.display = 'block';
     }
     else{
         document.querySelector('.product').style.display = 'none';
