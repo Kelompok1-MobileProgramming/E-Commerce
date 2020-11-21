@@ -316,7 +316,7 @@
                         <div class="limiter">
                             <div class="container-login100">
                                 <div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
-                                    <form class="login100-form validate-form flex-sb flex-w"  action="/member" method="GET">
+                                    <form class="login100-form validate-form flex-sb flex-w"  action="../users/signin" method="post">
                                         <span class="login100-form-title p-b-32, signtex">
                                 Account Login
                             </span>
@@ -336,7 +336,7 @@
                                             <span class="btn-show-pass">
                                     <i class="fa fa-eye"></i>
                                 </span>
-                                            <input class="input100" type="password" required>
+                                            <input class="input100" type="password" name="password" required>
                                             <span class="focus-input100"></span>
                                         </div>
 
@@ -355,13 +355,17 @@
                                             </div>
                                         </div>
 
+                                        <% if(locals.error) { %> 
+                                            <span><%=error %></span>
+                                        <% } %>
+
                                         <div class="container-login100-form-btn">
-                                            <button class="login100-form-btn" href="/member">
+                                            <button class="login100-form-btn" href="../users/member">
                                     Login
                                 </button>
                                         </div>
                                         <p class="othertex">Don't have an account? 
-                                            <a href="/register" class="sign" >Sign Up</a>
+                                            <a href="../users/register" class="sign" >Sign Up</a>
                                         </p>
                                     </form>
                                 </div>

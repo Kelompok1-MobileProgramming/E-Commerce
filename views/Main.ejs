@@ -656,7 +656,7 @@
                                     <p class="signinfont">Welcome back!</p>
                                     <div class="dropdown" style="float: right;">
                                         <button class="bt dropdown-toggle, signinbtn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 0%;">
-                                            <img src="../img/cartoon.png" alt="" method="GET" width="35px" height="35px">
+                                            <img src="../public/img/cartoon.png" alt= method="GET" width="35px" height="35px">
                                             </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="padding : 0%; height: 0%; padding-top: 0%; margin-top: 0%" ;>
                                             <div class="profile-block">
@@ -666,7 +666,7 @@
                                                         <h1>Please Login</h1>
                                                     </div>
                                                     <ul class="nav nav-pills nav-stacked">
-                                                        <li style="width: 100%;"><a href="/signin"><i class="fa fa-sign-out"></i>Login</a></li>
+                                                        <li style="width: 100%;"><a href="../users/signin"><i class="fa fa-sign-out"></i>Login</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -686,7 +686,7 @@
                                 <button class="dropbtn">MENU</button>
                                 <div class="dropdown-content">
                                     <a href="#" id="main" class="home" style="padding-top: 3%; color: white;">Home</a>
-                                    <a href="/signin" class="home" style="padding-top: 3%; color: white;">Performance</a>
+                                    <a href="../users/signin" class="home" style="padding-top: 3%; color: white;">Performance</a>
                                     <div class="dropdown dropright">
                                         <button type="button" class="btn btn-primary dropdown-toggle, darkbtn" data-toggle="dropdown" 
                                         style="width: 200px; padding-top: 3%; outline: none; box-shadow: none; margin-right: 0%;">
@@ -1055,65 +1055,57 @@
                             </div>
     
                             
-                            <li class="noitems , list-unstyled">
-                                <hr>
-                                <div class="">
-                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="bajuslide">
-                                        <div class="col-sm mx-6 px-6 py-5">
-                                            <div class="row">
-                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/baju.jpg?raw=true" method="GET" width="19%" height="19%" style="margin-left: 10%; margin-right: 0%;">
-                                                <div class="col-sm" style="text-align: center; margin: 0%; padding: 0%; width: 50%; float: right;">
-                                                    <h2 class="my-2 text-primary" style="font-size: 3vw; margin: 0%; padding: 0%; font-size: min(3vw, 45px);">Baju Polos Putih</h2>
-                                                    <p class="text-success" style="font-size: 2vw; margin: 0%; padding: 0%; font-size: min(2vw, 20px);">Baju Polos Putih <br>Size: XS, S, M, L, XL
-                                                        <br>100% Cotton Combed <br> - Bahan adem <br> - Menyerap keringat <br> - Serat halus</p>
-                                                </div>
+                            <hr>
+                            <div class="mySlides fade">
+                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="bajuslide">
+                                    <div class="col-sm mx-6 px-6 py-5">
+                                        <div class="row">
+                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/baju.jpg?raw=true" method="GET" width="19%" height="19%" style="margin-left: 10%; margin-right: 0%;">
+                                            <div class="col-sm" style="text-align: center; margin: 0%; padding: 0%; width: 50%; float: right;">
+                                                <h2 class="my-2 text-primary" style="font-size: 3vw; margin: 0%; padding: 0%; font-size: min(3vw, 45px);">Baju Polos Putih</h2>
+                                                <p class="text-success" style="font-size: 2vw; margin: 0%; padding: 0%; font-size: min(2vw, 20px);">Baju Polos Putih <br>Size: XS, S, M, L, XL
+                                                    <br>100% Cotton Combed <br> - Bahan adem <br> - Menyerap keringat <br> - Serat halus</p>
                                             </div>
                                         </div>
-                                    </a>
-                                </div>
-                            </li>
-
-                            <li class="noitems , list-unstyled">
-                                <div class="">
-                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="samsungslide">
-                                        <div class="col-sm mx-6 px-6 py-5">
-                                            <div class="row">
-                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/samsung.jpg?raw=true" method="GET" width="19%" height="19%" style="margin-left: 10%; margin-right: 0%;">
-                                                <div class="col-sm" style="text-align: center; margin: 0%; padding: 0%; width: 50%; float: right;">
-                                                    <h2 class="my-2 text-primary" style="font-size: 3vw; margin: 0%; padding: 0%; font-size: min(3vw, 45px);">Samsung</h2>
-                                                    <p class="text-success" style="font-size: 2vw; margin: 0%; padding: 0%; font-size: min(2vw, 20px);">Samsung A51 <br>Specifications:
-                                                        <br> - Kamera utama wide 48 MP<br> - Kamera ultrawide 12 MP <br> - Kamera makro 5 MP <br> - Kamera depth sensor 5 MP <br> - RAM 6 GB dan memori internal 128 GB</p>
-                                                </div>
+                                    </div>
+                                </a>
+                            </div>
+    
+                            <div class="mySlides fade">
+                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="samsungslide">
+                                    <div class="col-sm mx-6 px-6 py-5">
+                                        <div class="row">
+                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/samsung.jpg?raw=true" method="GET" width="19%" height="19%" style="margin-left: 10%; margin-right: 0%;">
+                                            <div class="col-sm" style="text-align: center; margin: 0%; padding: 0%; width: 50%; float: right;">
+                                                <h2 class="my-2 text-primary" style="font-size: 3vw; margin: 0%; padding: 0%; font-size: min(3vw, 45px);">Samsung</h2>
+                                                <p class="text-success" style="font-size: 2vw; margin: 0%; padding: 0%; font-size: min(2vw, 20px);">Samsung A51 <br>Specifications:
+                                                    <br> - Kamera utama wide 48 MP<br> - Kamera ultrawide 12 MP <br> - Kamera makro 5 MP <br> - Kamera depth sensor 5 MP <br> - RAM 6 GB dan memori internal 128 GB</p>
                                             </div>
                                         </div>
-                                    </a>
-                                </div>
-                            </li>
-                            
-                            <li class="noitems , list-unstyled">
-                                <div class="">
-                                    <a href="#" class="list-unstyled" style="text-decoration: none;" id="airpodsslide">
-                                        <div class="col-sm mx-6 px-6 py-5">
-                                            <div class="row">
-                                                <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/airpods.jpg?raw=true" method="GET" width="19%" height="19%" style="margin-left: 10%; margin-right: 0%;">
-                                                <div class="col-sm" style="text-align: center; margin: 0%; padding: 0%; width: 50%; float: right;">
-                                                    <h2 class="my-2 text-primary" style="font-size: 3vw; margin: 0%; padding: 0%; font-size: min(3vw, 45px);">Airpods</h2>
-                                                    <p class="text-success" style="font-size: 2vw; margin: 0%; padding: 0%; font-size: min(2vw, 20px);">Original Apple Airpods <br>Specifications:
-                                                        <br> - Bluetooth/Wireless<br> - Waterproof <br> - Built in Microphone <br> - 24 Hours Battery Supply</p>
-                                                </div>
+                                    </div>
+                                </a>
+                            </div>
+    
+                            <div class="mySlides fade">
+                                <a href="#" class="list-unstyled" style="text-decoration: none;" id="airpodsslide">
+                                    <div class="col-sm mx-6 px-6 py-5">
+                                        <div class="row">
+                                            <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/airpods.jpg?raw=true" method="GET" width="19%" height="19%" style="margin-left: 10%; margin-right: 0%;">
+                                            <div class="col-sm" style="text-align: center; margin: 0%; padding: 0%; width: 50%; float: right;">
+                                                <h2 class="my-2 text-primary" style="font-size: 3vw; margin: 0%; padding: 0%; font-size: min(3vw, 45px);">Airpods</h2>
+                                                <p class="text-success" style="font-size: 2vw; margin: 0%; padding: 0%; font-size: min(2vw, 20px);">Original Apple Airpods <br>Specifications:
+                                                    <br> - Bluetooth/Wireless<br> - Waterproof <br> - Built in Microphone <br> - 24 Hours Battery Supply</p>
                                             </div>
                                         </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="noitems , list-unstyled">
+                                    </div>
+                                </a>
+                            </div>
                             <div style="text-align:center">
                                 <span class="dot"></span>
                                 <span class="dot"></span>
                                 <span class="dot"></span>
                             </div>
                             <hr>
-                        </li>
                             
                             <div class="container">
     

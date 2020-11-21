@@ -2,8 +2,9 @@
   "name": "nodejestut",
   "version": "1.0.0",
   "description": "NodeJS Tutorial",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
   },
@@ -16,6 +17,6 @@
     "mongoose": "^5.10.15"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.6"
   }
 }
