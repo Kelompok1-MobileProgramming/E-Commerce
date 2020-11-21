@@ -18,5 +18,3 @@ This was created as part of YouTube Video. Links below
 ### Donations
 [Via Paypal](https://www.paypal.me/RadoslavAngelov)
 
-LINK
-localhost:3000/
