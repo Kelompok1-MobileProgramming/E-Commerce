@@ -1,18 +1,19 @@
-﻿# E-Commerce
-Project: E-Commerce
+# NodeJS Setup With HTML, CSS, JS & EJS
 
-Anggota :
- 
-1..535190016 - Dian Anggraini Cahyaning Tyas - https://github.com/dian-act
+This was created as part of YouTube Video. Links below
 
-2..535190034 - Cynthia Natalie -  https://github.com/cynthianatalie535190034
+### YouTube Video & Article
 
-3..535190039 - Clarence Christiany - https://github.com/clarencechristiany
+[Get Started With NodeJS on YouTube](https://www.youtube.com/watch?v=hypzCBQOxns)
 
-4..535190045 - Andri Firnandius - https://github.com/Andri-F
+[Read Article](https://www.raddy.co.uk/blog/nodejs-setup-with-html-css-js-ejs/)
 
-5..535180114 - Kevin Kwanda - https://github.com/KevinK19
+### YouTube Channel - RaddyTheBrand
 
-6..535180115 - yonatan giovanni - https://github.com/YG-source
+[Check out my channel here](https://www.youtube.com/raddythebrand)
 
-https://kelompok3-webprogramming.github.io/E-Commerce/HTML/Main.html
+### Website
+[www.raddy.co.uk](https://www.raddy.co.uk)
+
+### Donations
+[Via Paypal](https://www.paypal.me/RadoslavAngelov)
