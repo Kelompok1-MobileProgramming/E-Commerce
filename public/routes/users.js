@@ -54,3 +54,7 @@ router.post('/bootstrap',(req,res,next)=>{
 router.get('/logout',(req,res)=>{
  })
 module.exports  = router;
+
+router.get('/desc',(req,res) => {
+  res.render('Description');
+})
