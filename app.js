@@ -1,8 +1,20 @@
 const express = require('express');
+const session = require ('express-session');
+const BodyParser = require ('body-parser');
 const app = express();
 const mongoose = require('mongoose');
 const port = 3000;
 const expressEjsLayout = require('express-ejs-layouts')
+
+app.use(BodyParser.urlencoded({ extended: true }));
+
+//enable session
+app.use(session ({
+    secret: 'som3_s3cret_key5',
+    cookie: {},
+    resave: true,
+    saveUninitialized: true
+}));
 
 const userSchema = mongoose.Schema({
     username: String,
@@ -10,11 +22,22 @@ const userSchema = mongoose.Schema({
     fullname: String
 });
 
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model('user', userSchema);
 //mongoose
-mongoose.connect('mongodb+srv://Andri:LIhQIAnRoasaoQot@cluster0.mk3xs.mongodb.net/test?retryWrites=true&w=majority',{useNewUrlParser: true, useUnifiedTopology : true})
-.then(() => console.log('connected to mongoDB'))
-.catch((err)=> console.log(err));
+mongoose.connect(
+    'mongodb+srv://Andri:LIhQIAnRoasaoQot@cluster0.mk3xs.mongodb.net/test?retryWrites=true&w=majority',
+    { useNewUrlParser: true, useUnifiedTopology: true }
+);
+
+const db = mongoose.connection
+
+db.on('error', (err) => {
+    console.log(err)
+})
+
+db.once('open', () => {
+    console.log('Database Connected')
+})
 
 //EJS
 app.set('view engine','ejs');
