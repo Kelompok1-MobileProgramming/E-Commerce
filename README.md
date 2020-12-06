@@ -1,20 +1,10 @@
-# NodeJS Setup With HTML, CSS, JS & EJS
+Kelompok 3 - https://github.com/Kelompok3-WebProgramming/E-Commerce
 
-This was created as part of YouTube Video. Links below
-
-### YouTube Video & Article
-
-[Get Started With NodeJS on YouTube](https://www.youtube.com/watch?v=hypzCBQOxns)
-
-[Read Article](https://www.raddy.co.uk/blog/nodejs-setup-with-html-css-js-ejs/)
-
-### YouTube Channel - RaddyTheBrand
-
-[Check out my channel here](https://www.youtube.com/raddythebrand)
-
-### Website
-[www.raddy.co.uk](https://www.raddy.co.uk)
-
-### Donations
-[Via Paypal](https://www.paypal.me/RadoslavAngelov)
-
+Anggota :
+ 
+1..535190016 - Dian Anggraini Cahyaning Tyas - https://github.com/dian-act
+2..535190034 - Cynthia Natalie -  https://github.com/cynthianatalie535190034
+3..535190039 - Clarence Christiany - https://github.com/clarencechristiany
+4..535190045 - Andri Firnandius - https://github.com/Andri-F
+5..535180114 - Kevin Kwanda - https://github.com/KevinK19
+6..535180115 - yonatan giovanni - https://github.com/YG-source
