@@ -3,9 +3,11 @@
     "",
     "\\public",
     "\\public\\Javascript",
+    "\\public\\public",
+    "\\public\\public\\Javascript",
     "\\public\\views",
     "\\views"
   ],
-  "SelectedNode": "\\public\\views\\Main.ejs",
+  "SelectedNode": "\\public\\Javascript",
   "PreviewInSolutionExplorer": false
 }
