@@ -338,9 +338,29 @@
                                     <span class="change">OFF</span>
 
                                     <p class="signinfont">Welcome back!</p>
-                                    <a href="../users/signin"><button class="signinbtn" type="submit" ><img src="../img/cartoon.png" alt="" method="GET" width="35px" height="35px"></button></a>
+                                    <div class="dropdown" style="float: right;">
+                                        <button class="bt dropdown-toggle, signinbtn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 0%;">
+                                            <img src="../public/img/cartoon.png" alt="" method="GET" width="35px" height="35px">
+                                            </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="padding : 0%; height: 0%; padding-top: 0%; margin-top: 0%" ;>
+                                            <div class="profile-block">
+                                                <div class="panel text-center">
+                                                    <div class="user-heading">
+                                                        <a href="#"><img src="../public/img/cartoon.png" alt="" title=""></a>
+                                                        <h1>Please Login</h1>
+                                                    </div>
+                                                    <ul class="nav nav-pills nav-stacked">
+                                                        <li style="width: 100%;"><a href="../users/signin"><i class="fa fa-sign-out"></i>Login</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+
+
                             <br><br>
                             <h1 class="blink_me" style=" text-align: center;"><img class="logo" src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/bolo1.png?raw=true"></h1>
                             <p class="blink_me" style="text-align: center;"><img class="logo1" src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/bolobolobelanja.png?raw=true"></p>
@@ -349,22 +369,24 @@
                             <div class="dropdown">
                                 <button class="dropbtn">MENU</button>
                                 <div class="dropdown-content">
-                                    <a href="../users/main" class="home" style="padding-top: 3%; color: white;">Home</a>
+                                    <a href="#" id="main" class="home" style="padding-top: 3%; color: white;">Home</a>
                                     <a href="../users/signin" class="home" style="padding-top: 3%; color: white;">Performance</a>
                                     <div class="dropdown dropright">
-                                        <button type="button" class="btn btn-primary dropdown-toggle, darkbtn" data-toggle="dropdown" style="width: 200px; padding-top: 3%; outline: none;">
-                                    Products
-                                    </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="../users/main">Recommended</a>
-                                            <a class="dropdown-item" href="../users/main">Popular</a>
-                                            <a class="dropdown-item" href="../users/main">View All Products</a>
+                                        <button type="button" class="btn btn-primary dropdown-toggle, darkbtn" data-toggle="dropdown" 
+                                        style="width: 200px; padding-top: 3%; outline: none; box-shadow: none; margin-right: 0%;">
+                                        Products
+                                        </button>
+                                        <div class="dropdown-menu" style="margin-left: 0%; padding-top: 0%;">
+                                            <a class="dropdown-item" href="#" id="recom">Recommended</a>
+                                            <a class="dropdown-item" href="#" id="pop">Popular</a>
+                                            <a class="dropdown-item" href="#" id="product">View All Products</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <input id="searchbar" onkeyup="search_item()" type="text" name="search" placeholder="Search items..">
                         </div>
+                        <br>
                     </div>
                 </div>
             </body>

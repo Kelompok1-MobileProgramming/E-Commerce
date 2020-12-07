@@ -332,3 +332,52 @@ document.getElementById('promobil').addEventListener('click', function(){
     document.querySelector('.toys').style.display = 'flex';
     document.querySelector('#demo-content').style.display = 'none';
 });
+
+//////////
+////////
+//////
+
+document.getElementById('proteh').addEventListener('click', function(){
+    document.querySelector('.teh').style.display = 'flex';
+    document.querySelector('#demo-content').style.display = 'none';
+});
+
+document.getElementById('proparfum').addEventListener('click', function(){
+    document.querySelector('.parfum').style.display = 'flex';
+    document.querySelector('#demo-content').style.display = 'none';
+});
+
+document.getElementById('probunga').addEventListener('click', function(){
+    document.querySelector('.bunga').style.display = 'flex';
+    document.querySelector('#demo-content').style.display = 'none';
+});
+
+document.getElementById('proroyco').addEventListener('click', function(){
+    document.querySelector('.royco').style.display = 'flex';
+    document.querySelector('#demo-content').style.display = 'none';
+});
+
+document.getElementById('prochitato').addEventListener('click', function(){
+    document.querySelector('.chitato').style.display = 'flex';
+    document.querySelector('#demo-content').style.display = 'none';
+});
+
+document.getElementById('projolly').addEventListener('click', function(){
+    document.querySelector('.jolly').style.display = 'flex';
+    document.querySelector('#demo-content').style.display = 'none';
+});
+
+document.getElementById('procookies').addEventListener('click', function(){
+    document.querySelector('.cookies').style.display = 'flex';
+    document.querySelector('#demo-content').style.display = 'none';
+});
+
+document.getElementById('pronescafe').addEventListener('click', function(){
+    document.querySelector('.nescafe').style.display = 'flex';
+    document.querySelector('#demo-content').style.display = 'none';
+});
+
+document.getElementById('protas').addEventListener('click', function(){
+    document.querySelector('.tas').style.display = 'flex';
+    document.querySelector('#demo-content').style.display = 'none';
+});
