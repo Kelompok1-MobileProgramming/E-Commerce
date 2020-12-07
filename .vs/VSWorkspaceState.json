@@ -1,13 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\img",
     "\\public",
-    "\\public\\Javascript",
-    "\\public\\public",
-    "\\public\\public\\Javascript",
-    "\\public\\views",
     "\\views"
   ],
-  "SelectedNode": "\\public\\Javascript",
+  "SelectedNode": "\\img",
   "PreviewInSolutionExplorer": false
 }

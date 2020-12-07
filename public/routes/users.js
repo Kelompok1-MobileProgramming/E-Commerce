@@ -373,3 +373,13 @@ router.get('/tiketkucing',
   async(req,res)=>{
     res.render('../desc/tiketkucing');
 })
+
+router.get('/kue',
+  async(req,res)=>{
+    res.render('../desc/kue');
+})
+
+router.get('/beat',
+  async(req,res)=>{
+    res.render('../desc/beat');
+})
