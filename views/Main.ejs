@@ -844,6 +844,32 @@
         display: none;
         margin: 0px auto;
     }
+    
+    .potabi {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        margin: 0px auto;
+    }
+
+    .japota {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        margin: 0px auto;
+    }
 </style>
 
 </head>
@@ -1074,6 +1100,30 @@
                 <input class="isi" type="text" placeholder="...">
                 <p style="font-size: min(2vw, 30px);"> mainan mobil-mobilan </p>
                 <a href="../users/toys" class="submit">Detail</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="potabi"> 
+        <div class="modal-content">
+            <a href="../users/main" class="close">x</a>
+            <img src="https://assets.klikindomaret.com/share/20080040/20080040_1.jpg" style="width: 28%; height: auto; margin: 0% auto;">
+            <form action="">
+                <input class="isi" type="text" placeholder="...">
+                <p style="font-size: min(2vw, 30px);"> Potabi </p>
+                <a href="../users/Chitato" class="submit">Detail</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="japota"> 
+        <div class="modal-content">
+            <a href="../users/main" class="close">x</a>
+            <img src="https://github.com/Andri-F/perkembangan/blob/master/japoota.jpg?raw=true" style="width: 28%; height: auto; margin: 0% auto;">
+            <form action="">
+                <input class="isi" type="text" placeholder="...">
+                <p style="font-size: min(2vw, 30px);"> Japota </p>
+                <a href="../users/japoota class="submit">Detail</a>
             </form>
         </div>
     </div>
@@ -2904,7 +2954,7 @@
                             setTimeout(function() {
                                 $('body').addClass('loaded');
                                 $('h1').css('color', '#222222');
-                            }, 2000);
+                            }, 1000);
                         });
                     </script>
                     <script>

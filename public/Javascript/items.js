@@ -54,7 +54,7 @@ document.getElementById('jeans').addEventListener('click', function(){
 });
 
 document.getElementById('ig').addEventListener('click', function(){
-    document.querySelector('jual').style.display = 'flex';
+    document.querySelector('.jual').style.display = 'flex';
     document.querySelector('#demo-content').style.display = 'none';
 });
 
@@ -93,6 +93,10 @@ document.getElementById('beat').addEventListener('click', function(){
     document.querySelector('#demo-content').style.display = 'none';
 });
 
+document.getElementById('kue').addEventListener('click', function(){
+    document.querySelector('.kue').style.display = 'flex';
+    document.querySelector('#demo-content').style.display = 'none';
+});
 
 document.getElementById('bajuslide').addEventListener('click', function(){
     document.querySelector('.baju').style.display = 'flex';
@@ -155,7 +159,7 @@ document.getElementById('beras2').addEventListener('click', function(){
 });
 
 document.getElementById('airpods2').addEventListener('click', function(){
-    document.querySelector('.airpods').style.display = 'flex';
+    document.querySelector('.xairpods').style.display = 'flex';
     document.querySelector('#demo-content').style.display = 'none';
 });
 
