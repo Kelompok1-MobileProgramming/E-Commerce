@@ -3,7 +3,7 @@ const session = require ('express-session');
 const BodyParser = require ('body-parser');
 const app = express();
 const mongoose = require('mongoose');
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 const expressEjsLayout = require('express-ejs-layouts')
 
 app.use(BodyParser.urlencoded({ extended: true }));
@@ -50,5 +50,5 @@ app.use('/public', express.static('public'));
 app.use('/',require('./public/routes/index'));
 app.use('/users',require('./public/routes/users'));
 
-app.listen(3000); 
-console.log(`the server has been started on port ${port}`)
+app.listen(`${PORT}`); 
+console.log(`the server has been started on port ${PORT}`)

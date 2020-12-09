@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-const TodoController = require('../DB/DB');
-
 router.get('/',
    async (req, res) => {
        if (!req.session.user) {

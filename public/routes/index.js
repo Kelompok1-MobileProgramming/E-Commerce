@@ -3,7 +3,7 @@ const router  = express.Router();
 
 router.get('/',
     async (req, res) => {
-        res.send('ok');
+        res.send('<a href="users/main"> klik disini untuk masuk link kamu </a>');
     });
 
 module.exports = router; 
