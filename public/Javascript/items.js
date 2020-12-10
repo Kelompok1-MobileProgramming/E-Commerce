@@ -1,5 +1,5 @@
 document.getElementById('baju').addEventListener('click', function(){
-    document.querySelector('.baju').style.display = 'flex';
+    document.querySelector('.xbaju').style.display = 'flex';
     document.querySelector('#demo-content').style.display = 'none';
 });
 
@@ -99,7 +99,7 @@ document.getElementById('kue').addEventListener('click', function(){
 });
 
 document.getElementById('bajuslide').addEventListener('click', function(){
-    document.querySelector('.baju').style.display = 'flex';
+    document.querySelector('.xbaju').style.display = 'flex';
     document.querySelector('#demo-content').style.display = 'none';
 });
 
@@ -114,7 +114,7 @@ document.getElementById('airpodsslide').addEventListener('click', function(){
 });
 
 document.getElementById('baju2').addEventListener('click', function(){
-    document.querySelector('.baju').style.display = 'flex';
+    document.querySelector('.xbaju').style.display = 'flex';
     document.querySelector('#demo-content').style.display = 'none';
 });
 
@@ -177,7 +177,7 @@ document.getElementById('japota2').addEventListener('click', function(){
 /*POPULAR*/
 
 document.getElementById('popbaju').addEventListener('click', function(){
-    document.querySelector('.baju').style.display = 'flex';
+    document.querySelector('.xbaju').style.display = 'flex';
     document.querySelector('#demo-content').style.display = 'none';
 });
 
@@ -319,7 +319,7 @@ document.getElementById('projapota').addEventListener('click', function(){
 });
 
 document.getElementById('probaju').addEventListener('click', function(){
-    document.querySelector('.baju').style.display = 'flex';
+    document.querySelector('.xbaju').style.display = 'flex';
     document.querySelector('#demo-content').style.display = 'none';
 });
 

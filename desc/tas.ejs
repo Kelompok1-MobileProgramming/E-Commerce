@@ -332,39 +332,9 @@
 
                 <div>
                     <div class="">
-                        <div class="headback">
-                            <div class="mode" style="padding-top: 0.5%">
-                                <div style="margin:1%; margin-bottom: 0%;">Dark mode:
-                                    <span class="change">OFF</span>
-
-                                    <p class="signinfont">Welcome back!</p>
-                                    <a href="../users/signin"><button class="signinbtn" type="submit" ><img src="../img/cartoon.png" alt="" method="GET" width="35px" height="35px"></button></a>
-                                </div>
-                            </div>
-                            <br><br>
-                            <h1 class="blink_me" style=" text-align: center;"><img class="logo" src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/bolo1.png?raw=true"></h1>
-                            <p class="blink_me" style="text-align: center;"><img class="logo1" src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/bolobolobelanja.png?raw=true"></p>
-                            <br>
-
-                            <div class="dropdown">
-                                <button class="dropbtn">MENU</button>
-                                <div class="dropdown-content">
-                                    <a href="../users/main" class="home" style="padding-top: 3%; color: white;">Home</a>
-                                    <a href="../users/signin" class="home" style="padding-top: 3%; color: white;">Performance</a>
-                                    <div class="dropdown dropright">
-                                        <button type="button" class="btn btn-primary dropdown-toggle, darkbtn" data-toggle="dropdown" style="width: 200px; padding-top: 3%; outline: none;">
-                                    Products
-                                    </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="../users/main">Recommended</a>
-                                            <a class="dropdown-item" href="../users/main">Popular</a>
-                                            <a class="dropdown-item" href="../users/main">View All Products</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <input id="searchbar" onkeyup="search_item()" type="text" name="search" placeholder="Search items..">
-                        </div>
+                        <header>
+                            <%- include('../layout/memberheader.ejs'); %>
+                        </header>
 
 
                         <div class="container">
@@ -390,12 +360,7 @@
                     <option value="Cyan">
                     <option value="Biru">
                     <option value="Abu-Abu">
-                  </datalist><br><br> Size :
-                                        <select name="Size">
-                    <option value="S">S</option>
-                    <option value="M">M</option>
-                    <option value="L">L</option>
-                  </select><br><br> quantity :
+                  </datalist><br><br> quantity :
                                         <input type="number" name="quantity" min="1" max="100">
                                         <br><br>
 
@@ -430,83 +395,7 @@
                         </div>
 
                         <footer>
-                            <section class="boxes">
-                                <div class="container">
-
-                                    <div class="box">
-                                        <h6><b>BoloBolo</b></H6>
-                                        <ul>
-                                            <a href="AboutBoloBolo.ejs" style="text-decoration: none;">
-                                                <li> About BoloBolo</li>
-                                            </a>
-                                            <a href="DictionaryBolo.ejs" style="text-decoration: none;">
-                                                <li> Dictionary BoloBolo </li>
-                                            </a>
-                                            <a href="OfficialStoreBolo.ejs" style="text-decoration: none;">
-                                                <li> Official Store </li>
-                                            </a>
-                                            <a href="Application.ejs" style="text-decoration: none;">
-                                                <li> Application BoloBolo </li>
-                                            </a>
-                                            <a href="Deals.ejs" style="text-decoration: none;">
-                                                <li> Deals BoloBolo </li>
-                                            </a>
-                                            <a href="Discount.ejs" style="text-decoration: none;">
-                                                <li> Discount BoloBolo </li>
-                                            </a>
-                                        </ul>
-                                    </div>
-
-                                    <div class="box">
-                                        <h6><b>Buy</b></h6>
-                                        <ul>
-                                            <a href="#" style="text-decoration: none;">
-                                                <li> Category</li>
-                                            </a>
-                                            <a href="Recomended.ejs" style="text-decoration: none;">
-                                                <li> Recommended</li>
-                                            </a>
-                                            <a href="popular.ejs" style="text-decoration: none;">
-                                                <li> Popular</li>
-                                            </a>
-                                            <a href="product.ejs" style="text-decoration: none;">
-                                                <li> All Products</li>
-                                            </a>
-                                        </ul>
-                                    </div>
-
-
-                                    <div class="box">
-                                        <h6><b>Sell</b></h6>
-                                        <ul>
-                                            <a href="EducationSeller.ejs" style="text-decoration: none;">
-                                                <li> Education Seller</li>
-                                            </a>
-                                            <a href="BoloBoloPartners.ejs" style="text-decoration: none;">
-                                                <li> BoloBolo Partners</li>
-                                            </a>
-                                            <a href="OfficialStoreList.ejs" style="text-decoration: none;">
-                                                <li> Official Store Lists</li>
-                                            </a>
-                                            <br></br>
-                                        </ul>
-                                    </div>
-                                    <aside class="boxes">
-                                        <h6><b>Help Center</b></h6>
-                                        <v1>
-                                            <a href="bolobolocare.ejs" style="text-decoration: none;">
-                                                <li>BoloBolo Care</li>
-                                            </a>
-                                            <a href="TermsAndCondition.ejs" style="text-decoration: none;">
-                                                <li>Terms and Condition</li>
-                                            </a>
-                                            <a href="PrivacyPolicy.ejs" style="text-decoration: none;">
-                                                <li>Privacy Policy</li>
-                                            </a>
-                                        </v1>
-                                    </aside>
-                                </div>
-                            </section>
+                            <%- include('../layout/footer.ejs'); %>
                         </footer>
                         <script>
                             $(".change").on("click", function() {

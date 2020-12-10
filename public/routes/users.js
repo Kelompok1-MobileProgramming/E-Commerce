@@ -234,10 +234,6 @@ router.get('/logout',
 );
 module.exports  = router;
 
-router.get('/desc',(req,res) => {
-  res.render('Description');
-})
-
 //desc
 router.get('/airpods',
   async(req,res)=>{
@@ -279,7 +275,7 @@ router.get('/japota',
     res.render('../desc/japota');
 })
 
-router.get('/jeams',
+router.get('/jeans',
   async(req,res)=>{
     res.render('../desc/jeans');
 })
