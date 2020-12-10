@@ -15,5 +15,4 @@ Anggota :
 6..535180115 - yonatan giovanni - https://github.com/YG-source
 
 Come here and visit our website
-<br><br>
 <a href="https://bolobolo.herokuapp.com/users/main"> BoloBolo </a>
