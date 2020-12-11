@@ -342,26 +342,41 @@
                             <hr>
                             <div class="desc">
 
+                                <H5>pilih quantity ke selain 1 dulu yah!!</H5>
+			                <form Name="myform">
                                 <img src="https://i.pinimg.com/originals/3b/6f/6d/3b6f6d69ef70c7f14e3cf2474f28855f.jpg" class="descimg" method="GET">
-
                                 <article style="float:right;" class="col-sm-8">
                                     <h5 class="my-2 text-primary">Tas Tenteng Bulat</h5>
-                                    <h4 class="text-success" style="font-size: 20px;">IDR 555,555</h4>
+                                    <button type="button" onclick="calculatePrice()"></button>
+                                        Price: <INPUT type="text" id="PicExtPrice" Size=8>    
 
                                     <div>
                                         Warna :
-                                        <input list="Warna" name="Tipe warna" size="7">
-                                        <datalist id="Warna">
-                    <option value="Putih">
-                    <option value="Merah">
-                    <option value="Hijau">
-                    <option value="Kuning">
-                    <option value="Hitam">
-                    <option value="Cyan">
-                    <option value="Biru">
-                    <option value="Abu-Abu">
-                  </datalist><br><br> quantity :
-                                        <input type="number" name="quantity" min="1" max="100">
+                                <select name="Size" id="Item" onChange="calculatePrice()">
+                    				<option value="555555">Merah</option>
+                    				<option value="555555">Putih</option>
+                    				<option value="555555">Hijau</option>
+                                    <option value="555555">Biru</option>
+                                    <option value="555555">Kuning</option>
+                    				<option value="555555">Cyan</option>
+                    				<option value="555555">Hitam</option>
+                                    <option value="555555">Abu-abu</option>    
+                                </select>
+
+                              <br><br> 
+                              Quantity :
+                                <SELECT NAME="quantity" onChange="calculatePrice()" id="val"> quantity
+                				    <OPTION value="1">1</OPTION>
+               					    <OPTION value="2">2</OPTION>
+               					    <OPTION value="3">3</OPTION>
+                                    <OPTION value="4">4</OPTION>
+                                    <OPTION value="5">5</OPTION>
+               					    <OPTION value="6">6</OPTION>
+               					    <OPTION value="7">7</OPTION>
+                                    <OPTION value="8">8</OPTION>
+                                    <OPTION value="9">9</OPTION>
+               					    <OPTION value="10">10</OPTION>
+        				        </SELECT>
                                         <br><br>
 
                                     > Tas tenteng bulat yang dijamin kuat dan awet.
@@ -369,6 +384,7 @@
                                     > Memiliki banyak pilihan warna.
 
                                     </div>
+			</form>
                                     <br>
                                     <button class="descbtn" type="submit" onclick="alert('Pesanan anda sedang di proses')"> submit </button>
                                 </article>
@@ -380,6 +396,7 @@
 
                             <script src="../Javascript/search.js"></script>
                             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                            <script src="../public/Javascript/price.js"></script>
                             <script>
                                 window.jQuery || document.write('<script src="../javascript/vendor/jquery-1.9.1.min.js"><\/script>')
                             </script>
