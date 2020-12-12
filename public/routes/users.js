@@ -25,7 +25,7 @@ router.get('/main',
     res.render('../views/Main');
 })
 
-router.get('/signin', 
+router.get('/signin',
 async (req,res) => {
   res.render('../views/signin');
 })
@@ -35,9 +35,11 @@ async (req,res)=>{
     res.render('../views/Member');
     })
 
-router.get('/bootstrap',(req,res)=>{
+router.get('/bootstrap',
+async (req,res)=>{
     res.render('../views/bootstrap');
     })
+
 //Register handle
 router.post('/main',(req,res)=>{
 })
@@ -60,12 +62,12 @@ router.post('/signin',
         }
     });
 
-/*outer.post('/signin', 
+/*outer.post('/signin',
 [
     check("username", "Please enter a valid username").isString(),
     check("password", "Please enter a valid password").isLength({
         min: 8
-    }) 
+    })
 ],
     async(req,res) => {
         const errors = validationResult(req);
@@ -93,7 +95,7 @@ router.post('/signin',
                                 id: user.id
                                 }
                             };
-        
+
                             jwt.sign(
                                 payload,
                                 "randomString",
@@ -108,21 +110,21 @@ router.post('/signin',
                                         req.session.user = "client";
                                         res.redirect('/');
                                     }
-                                    
+
                                 }
                             );
                         }
-                }    
+                }
         } catch (e) {
             console.error(e);
             res.status(500).json({
                 message: "Server Error"
             });
-        }    
+        }
     }
 );*/
 
-router.get('/register', 
+router.get('/register',
   async (req,res) => {
     //if (req.session.user){
         //res.redirect('/users/main');
@@ -154,7 +156,7 @@ router.post('/register',
 
         const {
             username,
-            password, 
+            password,
             repeatpassword
         } = req.body;
         try{
@@ -169,19 +171,19 @@ router.post('/register',
                     password,
                     repeatpassword
                 });
-    
+
                 const salt = await bcrypt.genSalt(10);
                 user.password = await bcrypt.hash(password, salt);
                 user.repeatpassword = await bcrypt.hash(repeatpassword, salt);
 
                 await user.save();
-    
+
                 const payload = {
                     user: {
                         id: user.id
                     }
                 };
-    
+
                 jwt.sign(
                     payload,
                     "randomString", {
@@ -195,7 +197,7 @@ router.post('/register',
                             req.session.user = "client";
                             res.redirect('/users/member');
                         }
-                        
+
                     }
                 );
             }
