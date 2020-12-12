@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\desc",
     "\\public",
     "\\views"
   ],
-  "SelectedNode": "\\public\\fonts",
+  "SelectedNode": "\\desc\\tiketkucing.ejs",
   "PreviewInSolutionExplorer": false
 }
