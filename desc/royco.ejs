@@ -57,13 +57,13 @@
             color: #4ca340;
             text-decoration: none;
         }
-
+        
         .back-link a:hover,
         .back-link a:focus {
             color: #408536;
             text-decoration: none;
         }
-
+        
         .entry-header {
             text-align: left;
             margin: 0 auto 50px auto;
@@ -79,7 +79,7 @@
             color: #000;
             padding: 0.2em 0;
         }
-
+        
         #loader-wrapper {
             position: fixed;
             top: 0;
@@ -88,7 +88,7 @@
             height: 100%;
             z-index: 1000;
         }
-
+        
         #loader {
             display: block;
             position: relative;
@@ -106,7 +106,7 @@
             /* Chrome, Firefox 16+, IE 10+, Opera */
             z-index: 1001;
         }
-
+        
         #loader:before {
             content: "";
             position: absolute;
@@ -122,7 +122,7 @@
             animation: spin 3s linear infinite;
             /* Chrome, Firefox 16+, IE 10+, Opera */
         }
-
+        
         #loader:after {
             content: "";
             position: absolute;
@@ -138,7 +138,7 @@
             animation: spin 1.5s linear infinite;
             /* Chrome, Firefox 16+, IE 10+, Opera */
         }
-
+        
         @-webkit-keyframes spin {
             0% {
                 -webkit-transform: rotate(0deg);
@@ -157,7 +157,7 @@
                 /* Firefox 16+, IE 10+, Opera */
             }
         }
-
+        
         @keyframes spin {
             0% {
                 -webkit-transform: rotate(0deg);
@@ -176,7 +176,7 @@
                 /* Firefox 16+, IE 10+, Opera */
             }
         }
-
+        
         #loader-wrapper .loader-section {
             position: fixed;
             top: 0;
@@ -191,16 +191,16 @@
             transform: translateX(0);
             /* Firefox 16+, IE 10+, Opera */
         }
-
+        
         #loader-wrapper .loader-section.section-left {
             left: 0;
         }
-
+        
         #loader-wrapper .loader-section.section-right {
             right: 0;
         }
         /* Loaded */
-
+        
         .loaded #loader-wrapper .loader-section.section-left {
             -webkit-transform: translateX(-100%);
             /* Chrome, Opera 15+, Safari 3.1+ */
@@ -211,7 +211,7 @@
             -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
             transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
         }
-
+        
         .loaded #loader-wrapper .loader-section.section-right {
             -webkit-transform: translateX(100%);
             /* Chrome, Opera 15+, Safari 3.1+ */
@@ -222,13 +222,13 @@
             -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
             transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
         }
-
+        
         .loaded #loader {
             opacity: 0;
             -webkit-transition: all 0.3s ease-out;
             transition: all 0.3s ease-out;
         }
-
+        
         .loaded #loader-wrapper {
             visibility: hidden;
             -webkit-transform: translateY(-100%);
@@ -240,7 +240,7 @@
             -webkit-transition: all 0.3s 1s ease-out;
             transition: all 0.3s 1s ease-out;
         }
-
+        
         #content {
             margin: 0 auto;
             width: 100%;
@@ -248,7 +248,7 @@
         /*
     * Image replacement
     */
-
+        
         .ir {
             background-color: transparent;
             border: 0;
@@ -256,7 +256,7 @@
             /* IE 6/7 fallback */
             *text-indent: -9999px;
         }
-
+        
         .ir:before {
             content: "";
             display: block;
@@ -266,7 +266,7 @@
         /*
     * Hide from both screenreaders and browsers: h5bp.com/u
     */
-
+        
         .hidden {
             display: none !important;
             visibility: hidden;
@@ -274,7 +274,7 @@
         /*
     * Hide only visually, but have it available for screenreaders: h5bp.com/v
     */
-
+        
         .visuallyhidden {
             border: 0;
             clip: rect(0 0 0 0);
@@ -289,7 +289,7 @@
     * Extends the .visuallyhidden class to allow the element to be focusable
     * when navigated to via the keyboard: h5bp.com/p
     */
-
+        
         .visuallyhidden.focusable:active,
         .visuallyhidden.focusable:focus {
             clip: auto;
@@ -302,7 +302,7 @@
         /*
     * Hide visually and from screenreaders, but maintain layout
     */
-
+        
         .invisible {
             visibility: hidden;
         }
@@ -342,43 +342,19 @@
                             <hr>
                             <div class="desc">
 
-
-			                <form Name="myform">
                                 <img src="https://ecs7.tokopedia.net/img/cache/700/product-1/2020/5/4/626344/626344_6e631631-9a83-486f-83f4-ca9d7d7b41d2_1024_1024.jpg" class="descimg" method="GET">
+
                                 <article style="float:right;" class="col-sm-8">
                                     <h5 class="my-2 text-primary">Royco Rasa Jamur BEST SELLER</h5>
-                                    <button type="button" onclick="calculatePrice()"></button>
-                                        Price: <INPUT type="text" id="PicExtPrice" Size=8>
+                                    <h4 class="text-success" style="font-size: 20px;">IDR 6,000</h4>
 
                                     <div>
-                                    Size :
-                                <select name="Size" id="Item" onChange="calculatePrice()">
-                                    <option>pilih</option>
-                    				<option value="6000">Small</option>
-                    				<option value="8000">Reguler</option>
-                                </select>
-
-                              <br><br>
-                              Quantity :
-                                <SELECT NAME="quantity" onChange="calculatePrice()" id="val"> quantity
-                                    <option>pilih</option>
-                				    <OPTION value="1">1</OPTION>
-               					    <OPTION value="2">2</OPTION>
-               					    <OPTION value="3">3</OPTION>
-                                    <OPTION value="4">4</OPTION>
-                                    <OPTION value="5">5</OPTION>
-               					    <OPTION value="6">6</OPTION>
-               					    <OPTION value="7">7</OPTION>
-                                    <OPTION value="8">8</OPTION>
-                                    <OPTION value="9">9</OPTION>
-               					    <OPTION value="10">10</OPTION>
-        				        </SELECT>
+                                        Quantity :
+                                        <input type="number" name="quantity" min="1" max="100">
                                         <br><br>
 
                                     > Royco rasa jamur yang tentunya enak dan aman dikonsumsi.
-
                                     </div>
-			</form>
                                     <br>
                                     <button class="descbtn" type="submit" onclick="alert('Pesanan anda sedang di proses')"> submit </button>
                                 </article>
@@ -390,7 +366,6 @@
 
                             <script src="../Javascript/search.js"></script>
                             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-                            <script src="../public/Javascript/price.js"></script>
                             <script>
                                 window.jQuery || document.write('<script src="../javascript/vendor/jquery-1.9.1.min.js"><\/script>')
                             </script>
@@ -400,7 +375,7 @@
                                     setTimeout(function() {
                                         $('body').addClass('loaded');
                                         $('h1').css('color', '#222222');
-                                    }, 500);
+                                    }, 3000);
                                 });
                             </script>
                         </div>
