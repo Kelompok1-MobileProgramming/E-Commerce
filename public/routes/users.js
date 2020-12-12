@@ -225,6 +225,12 @@ router.post('/bootstrap',(req,res,next)=>{
     }
 });
 
+//delivery
+router.get('/delivery',
+  async(req,res)=>{
+    res.render('../views/delivery');
+})
+
 //logout
 router.get('/logout',
     async(req,res) => {
