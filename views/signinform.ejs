@@ -41,7 +41,7 @@
             color: #000;
             padding: 0.2em 0;
         }
-        
+
         #loader-wrapper {
             position: fixed;
             top: 0;
@@ -50,7 +50,7 @@
             height: 100%;
             z-index: 1000;
         }
-        
+
         #loader {
             display: block;
             position: relative;
@@ -68,7 +68,7 @@
             /* Chrome, Firefox 16+, IE 10+, Opera */
             z-index: 1001;
         }
-        
+
         #loader:before {
             content: "";
             position: absolute;
@@ -84,7 +84,7 @@
             animation: spin 3s linear infinite;
             /* Chrome, Firefox 16+, IE 10+, Opera */
         }
-        
+
         #loader:after {
             content: "";
             position: absolute;
@@ -100,7 +100,7 @@
             animation: spin 1.5s linear infinite;
             /* Chrome, Firefox 16+, IE 10+, Opera */
         }
-        
+
         @-webkit-keyframes spin {
             0% {
                 -webkit-transform: rotate(0deg);
@@ -119,7 +119,7 @@
                 /* Firefox 16+, IE 10+, Opera */
             }
         }
-        
+
         @keyframes spin {
             0% {
                 -webkit-transform: rotate(0deg);
@@ -138,7 +138,7 @@
                 /* Firefox 16+, IE 10+, Opera */
             }
         }
-        
+
         #loader-wrapper .loader-section {
             position: fixed;
             top: 0;
@@ -153,16 +153,16 @@
             transform: translateX(0);
             /* Firefox 16+, IE 10+, Opera */
         }
-        
+
         #loader-wrapper .loader-section.section-left {
             left: 0;
         }
-        
+
         #loader-wrapper .loader-section.section-right {
             right: 0;
         }
         /* Loaded */
-        
+
         .loaded #loader-wrapper .loader-section.section-left {
             -webkit-transform: translateX(-100%);
             /* Chrome, Opera 15+, Safari 3.1+ */
@@ -173,7 +173,7 @@
             -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
             transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
         }
-        
+
         .loaded #loader-wrapper .loader-section.section-right {
             -webkit-transform: translateX(100%);
             /* Chrome, Opera 15+, Safari 3.1+ */
@@ -184,13 +184,13 @@
             -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
             transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
         }
-        
+
         .loaded #loader {
             opacity: 0;
             -webkit-transition: all 0.3s ease-out;
             transition: all 0.3s ease-out;
         }
-        
+
         .loaded #loader-wrapper {
             visibility: hidden;
             -webkit-transform: translateY(-100%);
@@ -202,7 +202,7 @@
             -webkit-transition: all 0.3s 1s ease-out;
             transition: all 0.3s 1s ease-out;
         }
-        
+
         #content {
             margin: 0 auto;
             width: 100%;
@@ -210,7 +210,7 @@
         /*
     * Image replacement
     */
-        
+
         .ir {
             background-color: transparent;
             border: 0;
@@ -218,7 +218,7 @@
             /* IE 6/7 fallback */
             *text-indent: -9999px;
         }
-        
+
         .ir:before {
             content: "";
             display: block;
@@ -228,7 +228,7 @@
         /*
     * Hide from both screenreaders and browsers: h5bp.com/u
     */
-        
+
         .hidden {
             display: none !important;
             visibility: hidden;
@@ -236,7 +236,7 @@
         /*
     * Hide only visually, but have it available for screenreaders: h5bp.com/v
     */
-        
+
         .visuallyhidden {
             border: 0;
             clip: rect(0 0 0 0);
@@ -251,7 +251,7 @@
     * Extends the .visuallyhidden class to allow the element to be focusable
     * when navigated to via the keyboard: h5bp.com/p
     */
-        
+
         .visuallyhidden.focusable:active,
         .visuallyhidden.focusable:focus {
             clip: auto;
@@ -264,7 +264,7 @@
         /*
     * Hide visually and from screenreaders, but maintain layout
     */
-        
+
         .invisible {
             visibility: hidden;
         }
@@ -272,7 +272,7 @@
     <style>
         body {font-family: Arial, Helvetica, sans-serif;}
         * {box-sizing: border-box;}
-        
+
         /* Full-width input fields */
         input[type=text], input[type=password] {
           width: 100%;
@@ -282,7 +282,7 @@
           border: none;
           background: #fff;
         }
-        
+
         /* Add a background color when the inputs get focus */
         input[type=text]:focus, input[type=password]:focus {
           background-color: #fff;
@@ -338,10 +338,10 @@
             background-color: rgb(59, 10, 71) ;
         }
 
-        .dark{ 
-            background-color: rgb(65, 13, 56); 
-            color: #e6e6e6; 
-        } 
+        .dark{
+            background-color: rgb(65, 13, 56);
+            color: #e6e6e6;
+        }
 
         /* Add padding to container elements */
         .containerx {
@@ -352,7 +352,7 @@
         .dark .containerx {
             background-image: linear-gradient(rgb(80, 11, 65), rgb(80, 9, 68));
         }
-        
+
         /* The Modal (background) */
         .modal {
           display: none; /* Hidden by default */
@@ -366,7 +366,7 @@
           background-color: #474e5d;
           padding-top: 50px;
         }
-        
+
         /* Modal Content/Box */
         .modal-content {
           background-color: #fefefe;
@@ -374,13 +374,13 @@
           border: 1px solid #888;
           width: 80%; /* Could be more or less, depending on screen size */
         }
-        
+
         /* Style the horizontal ruler */
         hr {
           border: 1px solid #f1f1f1;
           margin-bottom: 25px;
         }
-         
+
         /* The Close Button (x) */
         .close {
           position: absolute;
@@ -390,20 +390,20 @@
           font-weight: bold;
           color: #f1f1f1;
         }
-        
+
         .close:hover,
         .close:focus {
           color: #f44336;
           cursor: pointer;
         }
-        
+
         /* Clear floats */
         .clearfix::after {
           content: "";
           clear: both;
           display: table;
         }
-        
+
         .font{
             color: gray;
         }
@@ -432,13 +432,13 @@
                     <div class="mode" style="padding-top: 0.5%">
                         <div style="margin:1%; margin-bottom: 0%;">Dark mode:
                             <span class="change">OFF</span>
-        
+
                         </div>
                     </div>
                     <br><br>
                     <h1 class="blink_me" style=" text-align: center;"><img class="logo" src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/bolo1.png?raw=true"></h1>
                     <p class="blink_me" style="text-align: center;"><img class="logo1" src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/bolobolobelanja.png?raw=true"></p>
-        
+
                     <br>
                     <div class="container-login100">
                     <form class="modal-content" action="../users/register" method="post">
@@ -453,16 +453,16 @@
 
                          <label for="psw"><b>Password</b></label>
                          <input name="password" id="password" type="password" placeholder="Enter Password" style="width: 100%;" required>
-        
+
                          <label for="psw-repeat"><b>Repeat Password</b></label>
                          <input name="repeatpassword" id="confirm_password" type="password" placeholder="Repeat Password" style="width: 100%;" required>
-              
+
                          <label>
-                            <input type="checkbox" style="margin-bottom:15px"> Remember me 
+                            <input type="checkbox" style="margin-bottom:15px"> Remember me
                          </label>
-        
+
                          <p class="font">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-        
+
                         <div class="container-login100-form-btn">
                         <button href="../users/member" class="login100-form-btn">
                             Sign Up
@@ -471,11 +471,11 @@
                      </div>
                     </form>
                     </div>
-        
+
             <script>
             // Get the modal
             var modal = document.getElementById('id01');
-        
+
             // When the user clicks anywhere outside of the modal, close it
             window.onclick = function(event) {
             if (event.target == modal) {
@@ -490,11 +490,11 @@
             </script>
             <script>
                 $(document).ready(function() {
-            
+
                 setTimeout(function() {
                     $('body').addClass('loaded');
                     $('h1').css('color', '#222222');
-                    }, 2000);
+                    }, 500);
                 });
             </script>
             <footer>
@@ -606,7 +606,7 @@
                 });
             </script>
         </div>
-        
+
         </body>
         </div>
     </div>

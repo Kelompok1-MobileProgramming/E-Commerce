@@ -57,13 +57,13 @@
             color: #4ca340;
             text-decoration: none;
         }
-        
+
         .back-link a:hover,
         .back-link a:focus {
             color: #408536;
             text-decoration: none;
         }
-        
+
         .entry-header {
             text-align: left;
             margin: 0 auto 50px auto;
@@ -79,7 +79,7 @@
             color: #000;
             padding: 0.2em 0;
         }
-        
+
         #loader-wrapper {
             position: fixed;
             top: 0;
@@ -88,7 +88,7 @@
             height: 100%;
             z-index: 1000;
         }
-        
+
         #loader {
             display: block;
             position: relative;
@@ -106,7 +106,7 @@
             /* Chrome, Firefox 16+, IE 10+, Opera */
             z-index: 1001;
         }
-        
+
         #loader:before {
             content: "";
             position: absolute;
@@ -122,7 +122,7 @@
             animation: spin 3s linear infinite;
             /* Chrome, Firefox 16+, IE 10+, Opera */
         }
-        
+
         #loader:after {
             content: "";
             position: absolute;
@@ -138,7 +138,7 @@
             animation: spin 1.5s linear infinite;
             /* Chrome, Firefox 16+, IE 10+, Opera */
         }
-        
+
         @-webkit-keyframes spin {
             0% {
                 -webkit-transform: rotate(0deg);
@@ -157,7 +157,7 @@
                 /* Firefox 16+, IE 10+, Opera */
             }
         }
-        
+
         @keyframes spin {
             0% {
                 -webkit-transform: rotate(0deg);
@@ -176,7 +176,7 @@
                 /* Firefox 16+, IE 10+, Opera */
             }
         }
-        
+
         #loader-wrapper .loader-section {
             position: fixed;
             top: 0;
@@ -191,16 +191,16 @@
             transform: translateX(0);
             /* Firefox 16+, IE 10+, Opera */
         }
-        
+
         #loader-wrapper .loader-section.section-left {
             left: 0;
         }
-        
+
         #loader-wrapper .loader-section.section-right {
             right: 0;
         }
         /* Loaded */
-        
+
         .loaded #loader-wrapper .loader-section.section-left {
             -webkit-transform: translateX(-100%);
             /* Chrome, Opera 15+, Safari 3.1+ */
@@ -211,7 +211,7 @@
             -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
             transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
         }
-        
+
         .loaded #loader-wrapper .loader-section.section-right {
             -webkit-transform: translateX(100%);
             /* Chrome, Opera 15+, Safari 3.1+ */
@@ -222,13 +222,13 @@
             -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
             transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
         }
-        
+
         .loaded #loader {
             opacity: 0;
             -webkit-transition: all 0.3s ease-out;
             transition: all 0.3s ease-out;
         }
-        
+
         .loaded #loader-wrapper {
             visibility: hidden;
             -webkit-transform: translateY(-100%);
@@ -240,7 +240,7 @@
             -webkit-transition: all 0.3s 1s ease-out;
             transition: all 0.3s 1s ease-out;
         }
-        
+
         #content {
             margin: 0 auto;
             width: 100%;
@@ -248,7 +248,7 @@
         /*
     * Image replacement
     */
-        
+
         .ir {
             background-color: transparent;
             border: 0;
@@ -256,7 +256,7 @@
             /* IE 6/7 fallback */
             *text-indent: -9999px;
         }
-        
+
         .ir:before {
             content: "";
             display: block;
@@ -266,7 +266,7 @@
         /*
     * Hide from both screenreaders and browsers: h5bp.com/u
     */
-        
+
         .hidden {
             display: none !important;
             visibility: hidden;
@@ -274,7 +274,7 @@
         /*
     * Hide only visually, but have it available for screenreaders: h5bp.com/v
     */
-        
+
         .visuallyhidden {
             border: 0;
             clip: rect(0 0 0 0);
@@ -289,7 +289,7 @@
     * Extends the .visuallyhidden class to allow the element to be focusable
     * when navigated to via the keyboard: h5bp.com/p
     */
-        
+
         .visuallyhidden.focusable:active,
         .visuallyhidden.focusable:focus {
             clip: auto;
@@ -302,7 +302,7 @@
         /*
     * Hide visually and from screenreaders, but maintain layout
     */
-        
+
         .invisible {
             visibility: hidden;
         }
@@ -341,40 +341,47 @@
                             <hr>
                             <div class="desc">
 
+                                <H5>pilih quantity ke selain 1 dulu yah!!</H5>
+			                <form Name="myform">
                                 <img src="https://github.com/Kelompok3-WebProgramming/E-Commerce/blob/master/img/jual.jpg?raw=true" class="descimg" method="GET">
-
                                 <article style="float:right;" class="col-sm-8">
                                     <h5 class="my-2 text-primary">Like IG</h5>
-                                    <h4 class="text-success" style="font-size: 20px;">IDR 3,000</h4>
+                                    <button type="button" onclick="calculatePrice()"></button>
+                                        Price: <INPUT type="text" id="PicExtPrice" Size=8>
 
                                     <div>
-                                       Paket :
-                                        <select name="Paket">
-                    <option value="A">A (1000)</option>
-                    <option value="B">B (5000)</option>
-                    <option value="C">C (10000)</option>
-                    <option value="D">D (25000)</option>
-                    <option value="E">E (50000)</option>
-                    <option value="F">F (100000)</option>
-                  </select><br><br> quantity :
-                                        <input type="number" name="quantity" min="1" max="100">
+                                        Paket :
+                                <select name="Size" id="Item" onChange="calculatePrice()">
+                                    <option>pilih</option>
+                    				<option value="3000">1000 Likes</option>
+                    				<option value="15000">5000 Likes</option>
+                    				<option value="30000">10000 Likes</option>
+                                    <option value="75000">25000 Likes</option>
+                                    <option value="150000">50000 Likes</option>
+                                    <option value="3000000">100000 Likes</option>
+                                </select>
+
+                              <br><br>
+                              Quantity :
+                                <SELECT NAME="quantity" onChange="calculatePrice()" id="val"> quantity
+                                    <option>pilih</option>
+                				    <OPTION value="1">1</OPTION>
+               					    <OPTION value="2">2</OPTION>
+               					    <OPTION value="3">3</OPTION>
+                                    <OPTION value="4">4</OPTION>
+                                    <OPTION value="5">5</OPTION>
+               					    <OPTION value="6">6</OPTION>
+               					    <OPTION value="7">7</OPTION>
+                                    <OPTION value="8">8</OPTION>
+                                    <OPTION value="9">9</OPTION>
+               					    <OPTION value="10">10</OPTION>
+        				        </SELECT>
                                         <br><br>
 
                                     > Jual like IG dengan banyak paket.
 
-                                    > Paket A : 1000 likes
-
-                                    > Paket B : 5000 likes
-
-                                    > Paket C : 10000 likes
-                                    
-                                    > Paket D : 25000 likes
-
-                                    > Paket E : 50000 likes
-
-                                    > Paket F : 100000 likes
-
                                     </div>
+            </form>
                                     <br>
                                     <button class="descbtn" type="submit" onclick="alert('Pesanan anda sedang di proses')"> submit </button>
                                 </article>
@@ -386,6 +393,7 @@
 
                             <script src="../Javascript/search.js"></script>
                             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                            <script src="../public/Javascript/price.js"></script>
                             <script>
                                 window.jQuery || document.write('<script src="../javascript/vendor/jquery-1.9.1.min.js"><\/script>')
                             </script>
@@ -395,7 +403,7 @@
                                     setTimeout(function() {
                                         $('body').addClass('loaded');
                                         $('h1').css('color', '#222222');
-                                    }, 3000);
+                                    }, 500);
                                 });
                             </script>
                         </div>

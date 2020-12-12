@@ -48,7 +48,7 @@
             color: #000;
             padding: 0.2em 0;
         }
-        
+
         #loader-wrapper {
             position: fixed;
             top: 0;
@@ -57,7 +57,7 @@
             height: 100%;
             z-index: 1000;
         }
-        
+
         #loader {
             display: block;
             position: relative;
@@ -75,7 +75,7 @@
             /* Chrome, Firefox 16+, IE 10+, Opera */
             z-index: 1001;
         }
-        
+
         #loader:before {
             content: "";
             position: absolute;
@@ -91,7 +91,7 @@
             animation: spin 3s linear infinite;
             /* Chrome, Firefox 16+, IE 10+, Opera */
         }
-        
+
         #loader:after {
             content: "";
             position: absolute;
@@ -107,7 +107,7 @@
             animation: spin 1.5s linear infinite;
             /* Chrome, Firefox 16+, IE 10+, Opera */
         }
-        
+
         @-webkit-keyframes spin {
             0% {
                 -webkit-transform: rotate(0deg);
@@ -126,7 +126,7 @@
                 /* Firefox 16+, IE 10+, Opera */
             }
         }
-        
+
         @keyframes spin {
             0% {
                 -webkit-transform: rotate(0deg);
@@ -145,7 +145,7 @@
                 /* Firefox 16+, IE 10+, Opera */
             }
         }
-        
+
         #loader-wrapper .loader-section {
             position: fixed;
             top: 0;
@@ -160,16 +160,16 @@
             transform: translateX(0);
             /* Firefox 16+, IE 10+, Opera */
         }
-        
+
         #loader-wrapper .loader-section.section-left {
             left: 0;
         }
-        
+
         #loader-wrapper .loader-section.section-right {
             right: 0;
         }
         /* Loaded */
-        
+
         .loaded #loader-wrapper .loader-section.section-left {
             -webkit-transform: translateX(-100%);
             /* Chrome, Opera 15+, Safari 3.1+ */
@@ -180,7 +180,7 @@
             -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
             transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
         }
-        
+
         .loaded #loader-wrapper .loader-section.section-right {
             -webkit-transform: translateX(100%);
             /* Chrome, Opera 15+, Safari 3.1+ */
@@ -191,13 +191,13 @@
             -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
             transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
         }
-        
+
         .loaded #loader {
             opacity: 0;
             -webkit-transition: all 0.3s ease-out;
             transition: all 0.3s ease-out;
         }
-        
+
         .loaded #loader-wrapper {
             visibility: hidden;
             -webkit-transform: translateY(-100%);
@@ -209,7 +209,7 @@
             -webkit-transition: all 0.3s 1s ease-out;
             transition: all 0.3s 1s ease-out;
         }
-        
+
         #content {
             margin: 0 auto;
             width: 100%;
@@ -217,7 +217,7 @@
         /*
     * Image replacement
     */
-        
+
         .ir {
             background-color: transparent;
             border: 0;
@@ -225,7 +225,7 @@
             /* IE 6/7 fallback */
             *text-indent: -9999px;
         }
-        
+
         .ir:before {
             content: "";
             display: block;
@@ -235,7 +235,7 @@
         /*
     * Hide from both screenreaders and browsers: h5bp.com/u
     */
-        
+
         .hidden {
             display: none !important;
             visibility: hidden;
@@ -243,7 +243,7 @@
         /*
     * Hide only visually, but have it available for screenreaders: h5bp.com/v
     */
-        
+
         .visuallyhidden {
             border: 0;
             clip: rect(0 0 0 0);
@@ -258,7 +258,7 @@
     * Extends the .visuallyhidden class to allow the element to be focusable
     * when navigated to via the keyboard: h5bp.com/p
     */
-        
+
         .visuallyhidden.focusable:active,
         .visuallyhidden.focusable:focus {
             clip: auto;
@@ -271,7 +271,7 @@
         /*
     * Hide visually and from screenreaders, but maintain layout
     */
-        
+
         .invisible {
             visibility: hidden;
         }
@@ -346,7 +346,7 @@
                                             </div>
                                         </div>
 
-                                        <% if(locals.error) { %> 
+                                        <% if(locals.error) { %>
                                             <span><%=error %></span>
                                         <% } %>
 
@@ -355,7 +355,7 @@
                                     Login
                                 </button>
                                         </div>
-                                        <p class="othertex">Don't have an account? 
+                                        <p class="othertex">Don't have an account?
                                             <a href="../users/register" class="sign" >Sign Up</a>
                                         </p>
                                     </form>
@@ -365,7 +365,7 @@
                         <script>
                             // Get the modal
                             var modal = document.getElementById('id01');
-                            
+
                             // When the user clicks anywhere outside of the modal, close it
                             window.onclick = function(event) {
                               if (event.target == modal) {
@@ -384,7 +384,7 @@
                                 setTimeout(function() {
                                     $('body').addClass('loaded');
                                     $('h1').css('color', '#222222');
-                                }, 2000);
+                                }, 500);
                             });
                         </script>
                         <footer>
@@ -407,7 +407,7 @@
                         <!--===============================================================================================-->
                         <script src="../Javascript/main.js"></script>
                     </div>
-                   
+
                     <script>
                         $(".change").on("click", function() {
                             if ($("body").hasClass("dark")) {
@@ -419,7 +419,7 @@
                             }
                         });
                     </script>
-                    
+
             </body>
             </div>
         </div>

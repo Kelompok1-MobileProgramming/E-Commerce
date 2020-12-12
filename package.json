@@ -20,7 +20,9 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.6.3",
     "mongoose": "^5.10.18",
-    "nodemon": "^2.0.6",
-    "vue-cli": "^2.9.6"
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {
+    
   }
 }
