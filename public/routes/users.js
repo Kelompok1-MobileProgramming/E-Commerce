@@ -26,7 +26,7 @@ router.get('/member',
     if (!req.session.user){
       res.redirect('../users/signin')
     } else {
-      res.render('../views/member');
+      res.render('../views/Member');
     }
   }
 );
