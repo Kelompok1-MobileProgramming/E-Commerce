@@ -1,6 +1,6 @@
 const express = require ('express');
 const router = express.Router();
-const { check, validationResult, checkSchema} = require('express-validator');
+const { check, validationResult} = require('express-validator');
 const bcrypt = require ('bcryptjs');
 const jwt = require ('jsonwebtoken');
 const User = require('../../models/Users');
@@ -11,34 +11,40 @@ const bodyParser = require('body-parser');
 const app = express();
 
 app.use(bodyParser.json())
-//const AuthController    = require('../../controllers/AuthControllers')
 
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 
-
-
-//login handle
 router.get('/main',
   async(req,res)=>{
     res.render('../views/Main');
   })
 
-router.get('/signin',
-  async (req,res) => {
-    res.render('../views/signin');
-  })
-
 router.get('/member',
   async (req,res)=>{
-    res.render('../views/Member');
-    })
+    if (!req.session.user){
+      res.redirect('../users/signin')
+    } else {
+      res.render('../views/member');
+    }
+  }
+);
 
 router.get('/bootstrap',
 async (req,res)=>{
     res.render('../views/bootstrap');
     })
+
+router.get('/signin',
+  async (req,res) => {
+    if (req.session.user){
+      res.redirect('../users/member')
+    } else {
+      res.render('../views/signin');
+    }
+  }
+);
 
 router.get('/register',
   async (req,res) => {
@@ -50,23 +56,7 @@ router.get('/register',
   }
 );
 
-router.post('/signin',
-  async (req, res) => {
-      // get user input
-      const username = req.body.name;
-      const password = req.body.password;
 
-      //check username and password
-      if(username === "admin" && password === "admin") {
-          //session
-          req.session.user = "admin";
-
-          //login success and redirect to member area
-          res.redirect('/users/member');
-      } else {
-          res.render('../views/signin', { layout: false, error: 'Wrong username or password.'});
-      }
-  });
 
 router.get('/me', auth, async (req,res) => {
   try{
@@ -92,7 +82,7 @@ router.get('/logout',
         res.redirect('../users/main');
     }
 );
-module.exports  = router;
+
 
 //desc
 router.get('/airpods',
@@ -240,9 +230,9 @@ router.get('/beat',
     res.render('../desc/beat');
 })
 
-/*outer.post('/signin',
+router.post('/signin',
 [
-    check("username", "Please enter a valid username").isString(),
+    check("email", "Please enter a valid email").isEmail(),
     check("password", "Please enter a valid password").isLength({
         min: 8
     })
@@ -256,17 +246,18 @@ router.get('/beat',
             });
         }
 
-        const {email, password} = req.body;
+        const email = req.body.email;
+        const password = req.body.password;
         try{
             let user = await User.findOne({
                 email
             });
             if(!user){
-                res.render('/views/signin', {error: 'User Not Exist'});
+                res.render('../../views/signin', {error: 'User Not Exist'});
             } else {
                     const isMatch = await bcrypt.compare(password, user.password);
                         if(!isMatch){
-                            res.render('/views/signin', {error: 'Incorrect Password!'});
+                            res.render('../../views/signin', {error: 'Incorrect Password!'});
                         } else {
                             const payload = {
                                 user: {
@@ -285,8 +276,8 @@ router.get('/beat',
                                         throw err;
                                     } else {
                                         console.log({token});
-                                        req.session.user = "client";
-                                        res.redirect('/');
+                                        req.session.user = "member";
+                                        res.redirect('../users/member');
                                     }
 
                                 }
@@ -300,7 +291,7 @@ router.get('/beat',
             });
         }
     }
-);*/
+);
 
 
 
@@ -327,12 +318,11 @@ router.post('/register',
             });
         }
 
-        const {
-            username,
-            email,
-            password,
-            repeatpassword
-        } = req.body;
+        const username = req.body.username;
+        const email = req.body.email;
+        const password = req.body.password;
+        const repeatpassword = req.body.repeatpassword;
+
         try{
             let user = await User.findOne({
                 username
@@ -382,3 +372,23 @@ router.post('/register',
         }
     }
 );
+
+module.exports  = router;
+
+/*router.post('/signin',
+  async (req, res) => {
+      // get user input
+      const username = req.body.name;
+      const password = req.body.password;
+
+      //check username and password
+      if(username === "admin" && password === "admin") {
+          //session
+          req.session.user = "admin";
+
+          //login success and redirect to member area
+          res.redirect('/users/member');
+      } else {
+          res.render('../views/signin', { layout: false, error: 'Wrong username or password.'});
+      }
+  });*/
