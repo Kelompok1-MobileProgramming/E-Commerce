@@ -316,7 +316,7 @@
                                 Email
                             </span>
                                         <div class="wrap-input100 validate-input m-b-36" data-validate="email is required">
-                                            <input  id="email" class="input100" type="email" name="email" required>
+                                            <input  id="email" class="input100" type="email" name="email" placeholder="example@gmail.com" required>
                                             <span class="focus-input100"></span>
                                         </div>
 
@@ -327,7 +327,7 @@
                                             <span class="btn-show-pass">
                                     <i class="fa fa-eye"></i>
                                 </span>
-                                            <input class="input100" type="password" name="password" minlength = "8" required>
+                                            <input class="input100" type="password" name="password" minlength = "8" placeholder="Enter Password"required>
                                             <span class="focus-input100"></span>
                                         </div>
 
@@ -367,14 +367,14 @@
                             darkmode.toggle();
                             console.log(darkmode.isActivated()) // will return true
                         </script>
-     
+
                         <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
                         <script>
                         function addDarkmodeWidget() {
                             new Darkmode().showWidget();
                         }
                         window.addEventListener('load', addDarkmodeWidget);
-                        </script> 
+                        </script>
                         <script>
                             // Get the modal
                             var modal = document.getElementById('id01');

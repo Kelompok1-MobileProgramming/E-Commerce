@@ -449,16 +449,16 @@
                          <p class="font">Please fill in this form to create an account.</p>
                          <hr>
                          <label for="username"><b>Username</b></label>
-                         <input type="text" placeholder="Enter Username" name="username" style="width: 100%;" required>
+                         <input type="text" placeholder="Enter Username" name="username" style="width: 100%; min-height: 55px;" required>
 
                          <label for="email"><b>Email</b></label>
-                         <input name="email" id="email" type="email" placeholder="your email" style="width: 100%;" required>
+                         <input name="email" id="email" type="email" placeholder="example@gmail.com" style="width: 100%; min-height: 55px; padding-left: 14px; margin-bottom: 15px;" required>
 
                          <label for="psw"><b>Password </b></label>
-                         <input name="password" id="password" type="password" minlength = "8" placeholder="Enter Password" style="width: 100%;" required>
+                         <input name="password" id="password" type="password" minlength = "8" placeholder="Enter Password" style="width: 100%; min-height: 55px;" required>
 
                          <label for="psw-repeat"><b>Repeat Password </b></label>
-                         <input name="repeatpassword" id="confirm_password" type="password" minlength = "8" placeholder="Repeat Password" style="width: 100%;" required>
+                         <input name="repeatpassword" id="confirm_password" type="password" minlength = "8" placeholder="Repeat Password" style="width: 100%; min-height: 55px;" required>
 
                          <label>
                             <input type="checkbox" style="margin-bottom:15px"> Remember me
@@ -479,14 +479,14 @@
                         darkmode.toggle();
                         console.log(darkmode.isActivated()) // will return true
                     </script>
- 
+
                     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
                     <script>
                     function addDarkmodeWidget() {
                         new Darkmode().showWidget();
                     }
                     window.addEventListener('load', addDarkmodeWidget);
-                    </script> 
+                    </script>
             <script>
             // Get the modal
             var modal = document.getElementById('id01');
