@@ -242,6 +242,15 @@ document.getElementById('recjapota').addEventListener('click', function(){
 
 /*******************************************************************************************/
 /*PRODUCTS*/
+document.getElementById('prokue').addEventListener('click', function(){
+    document.querySelector('.kue').style.display = 'flex';
+    document.querySelector('#demo-content').style.display = 'none';
+});
+
+document.getElementById('probeat').addEventListener('click', function(){
+    document.querySelector('.beat').style.display = 'flex';
+    document.querySelector('#demo-content').style.display = 'none';
+});
 
 document.getElementById('promomogi').addEventListener('click', function(){
     document.querySelector('.momogi').style.display = 'flex';

@@ -481,7 +481,7 @@
         color: #000 !important;
     }
 
-    .dark .profile-block .user-heading{
+    .darkmode--activated .profile-block .user-heading{
         background: darkmagenta none repeat scroll 0 0;
     }
 
@@ -518,7 +518,7 @@
 
         cursor: pointer;}
 
-    .dark .modal-content2{
+    .darkmode--activated .modal-content2{
         background-color: rgb(54, 6, 82);
     }
 
@@ -973,7 +973,7 @@
         position: relative;
     }
 
-    .dark .modal-content2 p{
+    .darkmode--activated .modal-content2 p{
         color: #ddd;
     }
     .row {
@@ -1244,20 +1244,20 @@ span.price {
                             <%- include('../layout/footer.ejs'); %>
                         </footer>
                     </div>
-                    
+
                     <script>
                         const darkmode =  new Darkmode();
                         darkmode.toggle();
                         console.log(darkmode.isActivated()) // will return true
                     </script>
- 
+
                     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
                     <script>
                     function addDarkmodeWidget() {
                         new Darkmode().showWidget();
                     }
                     window.addEventListener('load', addDarkmodeWidget);
-                    </script> 
+                    </script>
 
                     <script>
                         $(".change").on("click", function() {

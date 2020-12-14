@@ -5,29 +5,29 @@
 }
 
 .desc {
-    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color: #ffffff;
     padding: 3%;
 }
 
 .descbtn {
-    border-style: double; 
-    padding-left: 1%; 
+    border-style: double;
+    padding-left: 1%;
     padding-right: 1%;
     margin-top: 0%;
 }
 
-.dark{ 
-    background-color: rgb(65, 13, 56); 
-    color: #e6e6e6; 
-  } 
+.darkmode--activated{
+    background-color: rgb(65, 13, 56);
+    color: #e6e6e6;
+  }
 
-.dark .desc {
-    background-color: rgb(49, 10, 43);
+.darkmode--activated .desc {
+
     color: rgb(255, 255, 255);
 }
 
-.dark .descbtn {
+.darkmode--activated .descbtn {
     color: rgb(255, 255, 255);
     background-color: rgb(29, 28, 28);
 }

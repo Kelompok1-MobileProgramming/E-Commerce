@@ -295,7 +295,7 @@ input[type=text] {
 }
 
 
-/* When the input field gets focus, 
+/* When the input field gets focus,
      change its width to 100% */
 
 input[type=text]:focus {
@@ -325,110 +325,101 @@ input[type=text]:focus {
     margin-left: 8px;
 }
 
-.dark {
+.darkmode--activated {
     background-color: rgb(65, 13, 56);
     color: #e6e6e6;
 }
 
-.dark .gambar {
+
+.darkmode--activated .headback {
     background-color: #350432;
 }
 
-.dark .gambar1 {
+.darkmode--activated .logo {
+    filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+    filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+}
+
+.darkmode--activated .logo1 {
+    filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+    filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+}
+
+.darkmode--activated .dropbtn {
     background-color: #350432;
 }
 
-.dark .headback {
-    background-image: linear-gradient(rgb(61, 9, 50), rgb(80, 9, 68));
-}
-
-.dark .logo {
-    filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
-    filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
-}
-
-.dark .logo1 {
-    filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
-    filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
-}
-
-.dark .dropbtn {
-    background-color: #350432;
-}
-
-.dark .dropdown:hover .dropbtn {
+.darkmode--activated .dropdown:hover .dropbtn {
     background-color: #630d5e;
 }
 
-.dark .dropdown-content {
+.darkmode--activated .dropdown-content {
     background-color: darkblue;
 }
 
-.dark .home {
+.darkmode--activated .home {
     background-color: darkblue;
 }
 
-.dark .home:hover {
+.darkmode--activated .home:hover {
     background-color: rgb(30, 120, 255);
 }
 
-.dark .darkbtn {
+.darkmode--activated .darkbtn {
     border-style: none;
     background-color: darkblue;
 }
 
-.dark .darkbtn:hover {
+.darkmode--activated .darkbtn:hover {
     border-style: none;
     background-color: rgb(30, 120, 255);
 }
 
-.dark .baju {
+.darkmode--activated .baju {
     background-color: rgb(59, 12, 59);
 }
 
-.dark .baju:hover {
+.darkmode--activated .baju:hover {
     background-color: darkmagenta;
 }
 
-.dark footer {
-    background-image: linear-gradient(rgb(61, 9, 50), rgb(80, 9, 68));
+.darkmode--activated footer {
+    background-color:  rgb(80, 9, 68);
 }
 
-.dark footer h6 {
+.darkmode--activated footer h6 {
     color: #ffffff;
 }
 
-.dark footer li {
+.darkmode--activated footer li {
     color: aqua;
 }
 
-.dark footer li:hover {
+.darkmode--activated footer li:hover {
     color: rgb(4, 243, 163);
 }
 
-.dark #searchbar {
-    background-color: #350432;
-}
 
-.dark .signinbtn {
+
+.darkmode--activated .signinbtn {
     color: darkviolet;
     background-image: linear-gradient(rgb(61, 9, 50), rgb(80, 9, 68));
     ;
 }
 
-.dark .signinfont {
-    color: darkviolet;
+.darkmode--activated .signinfont {
+    color: royalblue
 }
 
-.dark .darktext {
+.darkmode--activated .darktext {
     color: white;
 }
 
-.dark .gambar:hover {
+.darkmode--activated .gambar:hover {
     background-color: rgb(20, 20, 46);
 }
 
-.dark .gambar1:hover {
+.darkmode--activated .gambar1:hover {
     background-color: rgb(20, 20, 46);
 }
 
@@ -446,6 +437,6 @@ input[type=text]:focus {
     background-color: orange;
 }
 
-.dark .dar {
+.darkmode--activated .dar {
     background-color: tomato;
 }

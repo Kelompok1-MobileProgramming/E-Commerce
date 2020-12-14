@@ -7,30 +7,30 @@
 
 @font-face {
   font-family: Raleway-Regular;
-  src: url('../fonts/raleway/Raleway-Regular.ttf'); 
+  src: url('../fonts/raleway/Raleway-Regular.ttf');
 }
 
 @font-face {
   font-family: Raleway-Medium;
-  src: url('../fonts/raleway/Raleway-Medium.ttf'); 
+  src: url('../fonts/raleway/Raleway-Medium.ttf');
 }
 
 @font-face {
   font-family: Raleway-SemiBold;
-  src: url('../fonts/raleway/Raleway-SemiBold.ttf'); 
+  src: url('../fonts/raleway/Raleway-SemiBold.ttf');
 }
 
 @font-face {
   font-family: Raleway-Bold;
-  src: url('../fonts/raleway/Raleway-Bold.ttf'); 
+  src: url('../fonts/raleway/Raleway-Bold.ttf');
 }
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
 * {
-	margin: 0px; 
-	padding: 0px; 
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 
@@ -168,12 +168,12 @@ iframe {
   width: 100%;
   margin: 0 auto;
 }
-.dark{ 
-  background-color: rgb(65, 13, 56); 
-  color: #e6e6e6; 
-} 
+.darkmode--activated{
+  background-color: rgb(65, 13, 56);
+  color: #e6e6e6;
+}
 .container-login100 {
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -185,36 +185,36 @@ iframe {
   align-items: center;
   padding: 15px;
   margin-bottom: 0%;
-  
+
   background-color: lightyellow;
 }
-.dark .container-login100 {
-  background-color:rgb(65, 13, 56);
+.darkmode--activated .container-login100 {
+  background-color:rgb(252, 247, 239)
 }
 
 .wrap-login100 {
   width: 560px;
-  background-image: linear-gradient(rgb(235, 218, 145), rgb(255, 255, 181));
+  background-color: rgb(235, 218, 145);
   border-radius: 10px;
   position: relative;
 }
-.dark .wrap-login100 {
-  background-image: linear-gradient(rgb(80, 11, 65), rgb(80, 9, 68));
+.darkmode--activated .wrap-login100 {
+  background-color: rgb(47, 7, 51);
 }
 
-.dark .signtex {
+.darkmode--activated .signtex {
   color: rgb(245, 241, 241);
 }
 
-.dark .othertex {
+.darkmode--activated .othertex {
   color: rgb(211, 207, 207);
 }
 
-.dark .sign {
+.darkmode--activated .sign {
   color: rgb(211, 207, 207);
 }
 
-.dark .sign:hover{
+.darkmode--activated .sign:hover{
   color: rgb(165, 163, 163);
 }
 
@@ -439,15 +439,15 @@ iframe {
   background-color: blue;
 }
 
-.dark .login100-form-btn{
+.darkmode--activated .login100-form-btn{
   background-color: rgb(42, 6, 51);
 }
 
-.dark .login100-form-btn:hover{
+.darkmode--activated .login100-form-btn:hover{
   background-color: rgb(59, 10, 71) ;
 }
 
-.dark .harga{
+.darkmode--activated .harga{
   color: white;
 }
 /*------------------------------------------------------------------

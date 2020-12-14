@@ -65,7 +65,7 @@
           color: black;
         }
 
-        .dark .table-hover tbody tr:hover{
+        .darkmode--activated .table-hover tbody tr:hover{
           color: white;
         }
       </style>
@@ -133,7 +133,7 @@
   }
 
   .dark .dar {
-    background-color: tomato;
+    background-color: rgb(28, 8, 46);
   }
 
   .change {
@@ -380,19 +380,9 @@
           </div>
         </div>
       </div>
-      <script>
-        const darkmode =  new Darkmode();
-        darkmode.toggle();
-        console.log(darkmode.isActivated()) // will return true
-    </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script>
-    function addDarkmodeWidget() {
-        new Darkmode().showWidget();
-    }
-    window.addEventListener('load', addDarkmodeWidget);
-    </script> 
+
+
       <script>
         $( ".change" ).on("click", function() {
             if( $( "body" ).hasClass( "dark" )) {
