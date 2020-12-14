@@ -8,7 +8,9 @@ function search_item() {
     if(input){
         document.querySelector('.product').style.display = 'block';
         document.querySelector('.product').style.top = '0px';
-        document.getElementsByClassName('container')[0].remove();
+        //document.getElementsByClassName('container')[0].remove();
+        //document.querySelector('.slide').style.display = 'none';
+        document.querySelector('.container').style.visibility = 'hidden';
     }
     else{
         location.reload();
