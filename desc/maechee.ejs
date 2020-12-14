@@ -388,7 +388,19 @@
                             </div>
                             <hr>
                             <br>
-
+                            <script>
+                                const darkmode =  new Darkmode();
+                                darkmode.toggle();
+                                console.log(darkmode.isActivated()) // will return true
+                            </script>
+         
+                            <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+                            <script>
+                            function addDarkmodeWidget() {
+                                new Darkmode().showWidget();
+                            }
+                            window.addEventListener('load', addDarkmodeWidget);
+                            </script> 
                             <script src="../Javascript/search.js"></script>
                             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
                             <script src="../public/Javascript/price.js"></script>
